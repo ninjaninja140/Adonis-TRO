@@ -329,19 +329,5 @@ return function(Vargs, env)
 				end
 			end,
 		}
-
-		--[[
-		TaskManager = { --// Unfinished
-			Prefix = Settings.Prefix;
-			Commands = {"taskmgr", "taskmanager"};
-			Args = {};
-			Description = "Task manager";
-			Hidden = true;
-			AdminLevel = "Creators";
-			Function = function(plr: Player, args: {string})
-				Remote.MakeGui(plr, "TaskManager", {})
-			end
-		};
-		--]]
 	}
 end

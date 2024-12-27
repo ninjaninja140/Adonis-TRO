@@ -2,11 +2,13 @@
 	<Meta name="ExplicitAutoJoints">true</Meta>
 	<External>null</External>
 	<External>nil</External>
-	<Item class="ScreenGui" referent="RBXAA66C042AA714A248914B43C0DE22481">
+	<Item class="ScreenGui" referent="RBX76259C8904A242528FC283EF1F6BC882">
 		<Properties>
 			<BinaryString name="AttributesSerialize"></BinaryString>
 			<bool name="AutoLocalize">false</bool>
+			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 			<bool name="ClipToDeviceSafeArea">true</bool>
+			<bool name="DefinesCapabilities">false</bool>
 			<int name="DisplayOrder">0</int>
 			<bool name="Enabled">false</bool>
 			<string name="Name">TaskManager</string>
@@ -23,16 +25,18 @@
 			<BinaryString name="Tags"></BinaryString>
 			<token name="ZIndexBehavior">0</token>
 		</Properties>
-		<Item class="BoolValue" referent="RBX0C7E8EE466D54509B92533DECE8EA94E">
+		<Item class="BoolValue" referent="RBXC7E738D4E2A1445C8020F1113C442414">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
+				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+				<bool name="DefinesCapabilities">false</bool>
 				<string name="Name">Check</string>
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
 				<bool name="Value">true</bool>
 			</Properties>
 		</Item>
-		<Item class="TextButton" referent="RBX0754CB6D8E484EEE890A398E875AE994">
+		<Item class="TextButton" referent="RBXED8512DC985B42CF90C5C5A5ED94FBC1">
 			<Properties>
 				<bool name="Active">true</bool>
 				<Vector2 name="AnchorPoint">
@@ -56,16 +60,21 @@
 				</Color3>
 				<token name="BorderMode">0</token>
 				<int name="BorderSizePixel">0</int>
+				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 				<bool name="ClipsDescendants">false</bool>
+				<bool name="DefinesCapabilities">false</bool>
 				<bool name="Draggable">true</bool>
 				<Font name="FontFace">
 					<Family><url>rbxasset://fonts/families/LegacyArial.json</url></Family>
 					<Weight>400</Weight>
 					<Style>Normal</Style>
-					<CachedFaceId><url>rbxasset://fonts/arial.ttf</url></CachedFaceId>
+					<CachedFaceId><url>rbxasset://fonts/Arimo-Regular.ttf</url></CachedFaceId>
 				</Font>
+				<bool name="Interactable">true</bool>
 				<int name="LayoutOrder">0</int>
 				<float name="LineHeight">1</float>
+				<string name="LocalizationMatchIdentifier"></string>
+				<string name="LocalizationMatchedSourceText"></string>
 				<int name="MaxVisibleGraphemes">-1</int>
 				<bool name="Modal">false</bool>
 				<string name="Name">Drag</string>
@@ -73,6 +82,7 @@
 				<Ref name="NextSelectionLeft">null</Ref>
 				<Ref name="NextSelectionRight">null</Ref>
 				<Ref name="NextSelectionUp">null</Ref>
+				<string name="OpenTypeFeatures"></string>
 				<UDim2 name="Position">
 					<XS>0</XS>
 					<XO>435</XO>
@@ -124,7 +134,7 @@
 				<bool name="Visible">true</bool>
 				<int name="ZIndex">1</int>
 			</Properties>
-			<Item class="Frame" referent="RBXE180EB2CF7D64F8A892B537FD22D4DD9">
+			<Item class="Frame" referent="RBXC83F1026257C4382BF7FA03D119C8313">
 				<Properties>
 					<bool name="Active">false</bool>
 					<Vector2 name="AnchorPoint">
@@ -147,8 +157,11 @@
 					</Color3>
 					<token name="BorderMode">0</token>
 					<int name="BorderSizePixel">0</int>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 					<bool name="ClipsDescendants">true</bool>
+					<bool name="DefinesCapabilities">false</bool>
 					<bool name="Draggable">false</bool>
+					<bool name="Interactable">true</bool>
 					<int name="LayoutOrder">0</int>
 					<string name="Name">Main</string>
 					<Ref name="NextSelectionDown">null</Ref>
@@ -184,7 +197,7 @@
 					<bool name="Visible">true</bool>
 					<int name="ZIndex">1</int>
 				</Properties>
-				<Item class="ScrollingFrame" referent="RBX694D5A87E6394DAD8DF2BFB42FEF3503">
+				<Item class="ScrollingFrame" referent="RBXB9FE30E8E1FB47908B16B08DD0EC4935">
 					<Properties>
 						<bool name="Active">true</bool>
 						<Vector2 name="AnchorPoint">
@@ -219,10 +232,13 @@
 							<YS>0</YS>
 							<YO>0</YO>
 						</UDim2>
+						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 						<bool name="ClipsDescendants">true</bool>
+						<bool name="DefinesCapabilities">false</bool>
 						<bool name="Draggable">false</bool>
 						<token name="ElasticBehavior">0</token>
 						<token name="HorizontalScrollBarInset">0</token>
+						<bool name="Interactable">true</bool>
 						<int name="LayoutOrder">0</int>
 						<Content name="MidImage"><url>http://roblox.com/asset?id=158348114</url></Content>
 						<string name="Name">Server</string>
@@ -271,7 +287,7 @@
 						<int name="ZIndex">2</int>
 					</Properties>
 				</Item>
-				<Item class="Frame" referent="RBX64BB5988A2804B23859ECEFA5D644ED2">
+				<Item class="Frame" referent="RBX4ED665CBF3E34FE48E551A2060253C9C">
 					<Properties>
 						<bool name="Active">true</bool>
 						<Vector2 name="AnchorPoint">
@@ -294,8 +310,11 @@
 						</Color3>
 						<token name="BorderMode">0</token>
 						<int name="BorderSizePixel">1</int>
+						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 						<bool name="ClipsDescendants">false</bool>
+						<bool name="DefinesCapabilities">false</bool>
 						<bool name="Draggable">true</bool>
+						<bool name="Interactable">true</bool>
 						<int name="LayoutOrder">0</int>
 						<string name="Name">Dragger</string>
 						<Ref name="NextSelectionDown">null</Ref>
@@ -332,7 +351,7 @@
 						<int name="ZIndex">1</int>
 					</Properties>
 				</Item>
-				<Item class="ImageLabel" referent="RBX8CDCC9FBE3F24BF185639502EDC227EC">
+				<Item class="ImageLabel" referent="RBXCB1980EDDFB64A3A9674C74AD9A69252">
 					<Properties>
 						<bool name="Active">false</bool>
 						<Vector2 name="AnchorPoint">
@@ -355,7 +374,9 @@
 						</Color3>
 						<token name="BorderMode">0</token>
 						<int name="BorderSizePixel">1</int>
+						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 						<bool name="ClipsDescendants">false</bool>
+						<bool name="DefinesCapabilities">false</bool>
 						<bool name="Draggable">false</bool>
 						<Content name="Image"><url>rbxassetid://334991942</url></Content>
 						<Color3 name="ImageColor3">
@@ -372,6 +393,7 @@
 							<Y>0</Y>
 						</Vector2>
 						<float name="ImageTransparency">0.5</float>
+						<bool name="Interactable">true</bool>
 						<int name="LayoutOrder">0</int>
 						<string name="Name">FakeDragger</string>
 						<Ref name="NextSelectionDown">null</Ref>
@@ -426,7 +448,7 @@
 						<int name="ZIndex">1</int>
 					</Properties>
 				</Item>
-				<Item class="ScrollingFrame" referent="RBX2617AF5B271649AE84C534E0FAFB9B65">
+				<Item class="ScrollingFrame" referent="RBXD00697AB9DF04C6F9067FC590AFB2EBD">
 					<Properties>
 						<bool name="Active">true</bool>
 						<Vector2 name="AnchorPoint">
@@ -461,10 +483,13 @@
 							<YS>0</YS>
 							<YO>0</YO>
 						</UDim2>
+						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 						<bool name="ClipsDescendants">true</bool>
+						<bool name="DefinesCapabilities">false</bool>
 						<bool name="Draggable">false</bool>
 						<token name="ElasticBehavior">0</token>
 						<token name="HorizontalScrollBarInset">0</token>
+						<bool name="Interactable">true</bool>
 						<int name="LayoutOrder">0</int>
 						<Content name="MidImage"><url>http://roblox.com/asset?id=158348114</url></Content>
 						<string name="Name">Client</string>
@@ -513,7 +538,7 @@
 						<int name="ZIndex">2</int>
 					</Properties>
 				</Item>
-				<Item class="TextButton" referent="RBXAEBF8FDABDEA430D8857BFF98278004E">
+				<Item class="TextButton" referent="RBX66AF2189CF3548858A45B9075BBAB031">
 					<Properties>
 						<bool name="Active">true</bool>
 						<Vector2 name="AnchorPoint">
@@ -537,16 +562,20 @@
 						</Color3>
 						<token name="BorderMode">0</token>
 						<int name="BorderSizePixel">0</int>
+						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 						<bool name="ClipsDescendants">false</bool>
+						<bool name="DefinesCapabilities">false</bool>
 						<bool name="Draggable">false</bool>
 						<Font name="FontFace">
 							<Family><url>rbxasset://fonts/families/Arial.json</url></Family>
 							<Weight>400</Weight>
 							<Style>Normal</Style>
-							<CachedFaceId><url>rbxasset://fonts/arial.ttf</url></CachedFaceId>
 						</Font>
+						<bool name="Interactable">true</bool>
 						<int name="LayoutOrder">0</int>
 						<float name="LineHeight">1</float>
+						<string name="LocalizationMatchIdentifier"></string>
+						<string name="LocalizationMatchedSourceText"></string>
 						<int name="MaxVisibleGraphemes">-1</int>
 						<bool name="Modal">false</bool>
 						<string name="Name">ServerTab</string>
@@ -554,6 +583,7 @@
 						<Ref name="NextSelectionLeft">null</Ref>
 						<Ref name="NextSelectionRight">null</Ref>
 						<Ref name="NextSelectionUp">null</Ref>
+						<string name="OpenTypeFeatures"></string>
 						<UDim2 name="Position">
 							<XS>0</XS>
 							<XO>5</XO>
@@ -606,7 +636,7 @@
 						<int name="ZIndex">10</int>
 					</Properties>
 				</Item>
-				<Item class="TextButton" referent="RBX360496F074DA41309775C58341901F86">
+				<Item class="TextButton" referent="RBX151F6DE9A7EA4BD99B2F5B76DFFD9815">
 					<Properties>
 						<bool name="Active">true</bool>
 						<Vector2 name="AnchorPoint">
@@ -630,16 +660,20 @@
 						</Color3>
 						<token name="BorderMode">0</token>
 						<int name="BorderSizePixel">0</int>
+						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 						<bool name="ClipsDescendants">false</bool>
+						<bool name="DefinesCapabilities">false</bool>
 						<bool name="Draggable">false</bool>
 						<Font name="FontFace">
 							<Family><url>rbxasset://fonts/families/Arial.json</url></Family>
 							<Weight>400</Weight>
 							<Style>Normal</Style>
-							<CachedFaceId><url>rbxasset://fonts/arial.ttf</url></CachedFaceId>
 						</Font>
+						<bool name="Interactable">true</bool>
 						<int name="LayoutOrder">0</int>
 						<float name="LineHeight">1</float>
+						<string name="LocalizationMatchIdentifier"></string>
+						<string name="LocalizationMatchedSourceText"></string>
 						<int name="MaxVisibleGraphemes">-1</int>
 						<bool name="Modal">false</bool>
 						<string name="Name">ClientTab</string>
@@ -647,6 +681,7 @@
 						<Ref name="NextSelectionLeft">null</Ref>
 						<Ref name="NextSelectionRight">null</Ref>
 						<Ref name="NextSelectionUp">null</Ref>
+						<string name="OpenTypeFeatures"></string>
 						<UDim2 name="Position">
 							<XS>0</XS>
 							<XO>60</XO>
@@ -700,7 +735,7 @@
 					</Properties>
 				</Item>
 			</Item>
-			<Item class="TextLabel" referent="RBX1026ADD2DE764DE285CCFBD7FA9EE344">
+			<Item class="TextLabel" referent="RBXEDB9EEE852604EA9936D1A110E30E341">
 				<Properties>
 					<bool name="Active">false</bool>
 					<Vector2 name="AnchorPoint">
@@ -723,22 +758,27 @@
 					</Color3>
 					<token name="BorderMode">0</token>
 					<int name="BorderSizePixel">0</int>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 					<bool name="ClipsDescendants">true</bool>
+					<bool name="DefinesCapabilities">false</bool>
 					<bool name="Draggable">false</bool>
 					<Font name="FontFace">
 						<Family><url>rbxasset://fonts/families/SourceSansPro.json</url></Family>
 						<Weight>400</Weight>
 						<Style>Normal</Style>
-						<CachedFaceId><url>rbxasset://fonts/SourceSansPro-Regular.ttf</url></CachedFaceId>
 					</Font>
+					<bool name="Interactable">true</bool>
 					<int name="LayoutOrder">0</int>
 					<float name="LineHeight">1</float>
+					<string name="LocalizationMatchIdentifier"></string>
+					<string name="LocalizationMatchedSourceText"></string>
 					<int name="MaxVisibleGraphemes">-1</int>
 					<string name="Name">Title</string>
 					<Ref name="NextSelectionDown">null</Ref>
 					<Ref name="NextSelectionLeft">null</Ref>
 					<Ref name="NextSelectionRight">null</Ref>
 					<Ref name="NextSelectionUp">null</Ref>
+					<string name="OpenTypeFeatures"></string>
 					<UDim2 name="Position">
 						<XS>0</XS>
 						<XO>70</XO>
@@ -789,7 +829,7 @@
 					<int name="ZIndex">9</int>
 				</Properties>
 			</Item>
-			<Item class="TextButton" referent="RBX70F4E726454A4A1A82DE4A3F052E5BDB">
+			<Item class="TextButton" referent="RBX170DD6640B5641308C05F8B17F065CCB">
 				<Properties>
 					<bool name="Active">true</bool>
 					<Vector2 name="AnchorPoint">
@@ -813,16 +853,20 @@
 					</Color3>
 					<token name="BorderMode">0</token>
 					<int name="BorderSizePixel">0</int>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 					<bool name="ClipsDescendants">false</bool>
+					<bool name="DefinesCapabilities">false</bool>
 					<bool name="Draggable">false</bool>
 					<Font name="FontFace">
 						<Family><url>rbxasset://fonts/families/Arial.json</url></Family>
 						<Weight>400</Weight>
 						<Style>Normal</Style>
-						<CachedFaceId><url>rbxasset://fonts/arial.ttf</url></CachedFaceId>
 					</Font>
+					<bool name="Interactable">true</bool>
 					<int name="LayoutOrder">0</int>
 					<float name="LineHeight">1</float>
+					<string name="LocalizationMatchIdentifier"></string>
+					<string name="LocalizationMatchedSourceText"></string>
 					<int name="MaxVisibleGraphemes">-1</int>
 					<bool name="Modal">false</bool>
 					<string name="Name">Close</string>
@@ -830,6 +874,7 @@
 					<Ref name="NextSelectionLeft">null</Ref>
 					<Ref name="NextSelectionRight">null</Ref>
 					<Ref name="NextSelectionUp">null</Ref>
+					<string name="OpenTypeFeatures"></string>
 					<UDim2 name="Position">
 						<XS>1</XS>
 						<XO>-20</XO>
@@ -882,7 +927,7 @@
 					<int name="ZIndex">10</int>
 				</Properties>
 			</Item>
-			<Item class="TextButton" referent="RBXBF05BB9A71984C4A991982EAA82E4A2E">
+			<Item class="TextButton" referent="RBX9070C49194CF49A9AA547B095C274561">
 				<Properties>
 					<bool name="Active">true</bool>
 					<Vector2 name="AnchorPoint">
@@ -906,16 +951,20 @@
 					</Color3>
 					<token name="BorderMode">0</token>
 					<int name="BorderSizePixel">0</int>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 					<bool name="ClipsDescendants">false</bool>
+					<bool name="DefinesCapabilities">false</bool>
 					<bool name="Draggable">false</bool>
 					<Font name="FontFace">
 						<Family><url>rbxasset://fonts/families/Arial.json</url></Family>
 						<Weight>400</Weight>
 						<Style>Normal</Style>
-						<CachedFaceId><url>rbxasset://fonts/arial.ttf</url></CachedFaceId>
 					</Font>
+					<bool name="Interactable">true</bool>
 					<int name="LayoutOrder">0</int>
 					<float name="LineHeight">1</float>
+					<string name="LocalizationMatchIdentifier"></string>
+					<string name="LocalizationMatchedSourceText"></string>
 					<int name="MaxVisibleGraphemes">-1</int>
 					<bool name="Modal">false</bool>
 					<string name="Name">Hide</string>
@@ -923,6 +972,7 @@
 					<Ref name="NextSelectionLeft">null</Ref>
 					<Ref name="NextSelectionRight">null</Ref>
 					<Ref name="NextSelectionUp">null</Ref>
+					<string name="OpenTypeFeatures"></string>
 					<UDim2 name="Position">
 						<XS>1</XS>
 						<XO>-45</XO>
@@ -975,7 +1025,7 @@
 					<int name="ZIndex">10</int>
 				</Properties>
 			</Item>
-			<Item class="TextBox" referent="RBXE2757192B7494D24ACB834B3C5C912E3">
+			<Item class="TextBox" referent="RBX92A8DED38ABD42AFB669A1A33C51335C">
 				<Properties>
 					<bool name="Active">true</bool>
 					<Vector2 name="AnchorPoint">
@@ -998,17 +1048,21 @@
 					</Color3>
 					<token name="BorderMode">0</token>
 					<int name="BorderSizePixel">0</int>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 					<bool name="ClearTextOnFocus">true</bool>
 					<bool name="ClipsDescendants">false</bool>
+					<bool name="DefinesCapabilities">false</bool>
 					<bool name="Draggable">false</bool>
 					<Font name="FontFace">
 						<Family><url>rbxasset://fonts/families/Arial.json</url></Family>
 						<Weight>400</Weight>
 						<Style>Normal</Style>
-						<CachedFaceId><url>rbxasset://fonts/arial.ttf</url></CachedFaceId>
 					</Font>
+					<bool name="Interactable">true</bool>
 					<int name="LayoutOrder">0</int>
 					<float name="LineHeight">1</float>
+					<string name="LocalizationMatchIdentifier"></string>
+					<string name="LocalizationMatchedSourceText"></string>
 					<int name="MaxVisibleGraphemes">-1</int>
 					<bool name="MultiLine">false</bool>
 					<string name="Name">Search</string>
@@ -1016,6 +1070,7 @@
 					<Ref name="NextSelectionLeft">null</Ref>
 					<Ref name="NextSelectionRight">null</Ref>
 					<Ref name="NextSelectionUp">null</Ref>
+					<string name="OpenTypeFeatures"></string>
 					<Color3 name="PlaceholderColor3">
 						<R>0.699999988</R>
 						<G>0.699999988</G>
@@ -1074,7 +1129,7 @@
 					<int name="ZIndex">9</int>
 				</Properties>
 			</Item>
-			<Item class="TextButton" referent="RBXB157293866EE4AD09D6B832EFF233E66">
+			<Item class="TextButton" referent="RBX258FA812104C4FA58317FE90CA549B61">
 				<Properties>
 					<bool name="Active">true</bool>
 					<Vector2 name="AnchorPoint">
@@ -1098,16 +1153,20 @@
 					</Color3>
 					<token name="BorderMode">0</token>
 					<int name="BorderSizePixel">0</int>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 					<bool name="ClipsDescendants">false</bool>
+					<bool name="DefinesCapabilities">false</bool>
 					<bool name="Draggable">false</bool>
 					<Font name="FontFace">
 						<Family><url>rbxasset://fonts/families/Arial.json</url></Family>
 						<Weight>400</Weight>
 						<Style>Normal</Style>
-						<CachedFaceId><url>rbxasset://fonts/arial.ttf</url></CachedFaceId>
 					</Font>
+					<bool name="Interactable">true</bool>
 					<int name="LayoutOrder">0</int>
 					<float name="LineHeight">1</float>
+					<string name="LocalizationMatchIdentifier"></string>
+					<string name="LocalizationMatchedSourceText"></string>
 					<int name="MaxVisibleGraphemes">-1</int>
 					<bool name="Modal">false</bool>
 					<string name="Name">Refresh</string>
@@ -1115,6 +1174,7 @@
 					<Ref name="NextSelectionLeft">null</Ref>
 					<Ref name="NextSelectionRight">null</Ref>
 					<Ref name="NextSelectionUp">null</Ref>
+					<string name="OpenTypeFeatures"></string>
 					<UDim2 name="Position">
 						<XS>1</XS>
 						<XO>-70</XO>
@@ -1168,7 +1228,7 @@
 				</Properties>
 			</Item>
 		</Item>
-		<Item class="TextLabel" referent="RBX51B6D96D347B47BDA30F2EE5B25577B0">
+		<Item class="TextLabel" referent="RBXEA52533572064CA8A4C0F982DA1C0ADA">
 			<Properties>
 				<bool name="Active">false</bool>
 				<Vector2 name="AnchorPoint">
@@ -1191,22 +1251,27 @@
 				</Color3>
 				<token name="BorderMode">0</token>
 				<int name="BorderSizePixel">1</int>
+				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 				<bool name="ClipsDescendants">false</bool>
+				<bool name="DefinesCapabilities">false</bool>
 				<bool name="Draggable">false</bool>
 				<Font name="FontFace">
 					<Family><url>rbxasset://fonts/families/Arial.json</url></Family>
 					<Weight>400</Weight>
 					<Style>Normal</Style>
-					<CachedFaceId><url>rbxasset://fonts/arial.ttf</url></CachedFaceId>
 				</Font>
+				<bool name="Interactable">true</bool>
 				<int name="LayoutOrder">0</int>
 				<float name="LineHeight">1</float>
+				<string name="LocalizationMatchIdentifier"></string>
+				<string name="LocalizationMatchedSourceText"></string>
 				<int name="MaxVisibleGraphemes">-1</int>
 				<string name="Name">Boolean</string>
 				<Ref name="NextSelectionDown">null</Ref>
 				<Ref name="NextSelectionLeft">null</Ref>
 				<Ref name="NextSelectionRight">null</Ref>
 				<Ref name="NextSelectionUp">null</Ref>
+				<string name="OpenTypeFeatures"></string>
 				<UDim2 name="Position">
 					<XS>0</XS>
 					<XO>0</XO>
@@ -1256,16 +1321,18 @@
 				<bool name="Visible">false</bool>
 				<int name="ZIndex">2</int>
 			</Properties>
-			<Item class="StringValue" referent="RBX2507BEB5F8BF4E7BB01BEFBBC561DC59">
+			<Item class="StringValue" referent="RBXC46BBAA8F2104EE28F76813CF312089D">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
 					<string name="Name">Desc</string>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
 					<string name="Value">TestDesc</string>
 				</Properties>
 			</Item>
-			<Item class="TextButton" referent="RBX352C6CF1EF914C6EBF5F097CB3F4D863">
+			<Item class="TextButton" referent="RBX3808DE58148F4C808D9F9FAAF5652E03">
 				<Properties>
 					<bool name="Active">true</bool>
 					<Vector2 name="AnchorPoint">
@@ -1289,16 +1356,20 @@
 					</Color3>
 					<token name="BorderMode">0</token>
 					<int name="BorderSizePixel">0</int>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 					<bool name="ClipsDescendants">false</bool>
+					<bool name="DefinesCapabilities">false</bool>
 					<bool name="Draggable">false</bool>
 					<Font name="FontFace">
 						<Family><url>rbxasset://fonts/families/Arial.json</url></Family>
 						<Weight>400</Weight>
 						<Style>Normal</Style>
-						<CachedFaceId><url>rbxasset://fonts/arial.ttf</url></CachedFaceId>
 					</Font>
+					<bool name="Interactable">true</bool>
 					<int name="LayoutOrder">0</int>
 					<float name="LineHeight">1</float>
+					<string name="LocalizationMatchIdentifier"></string>
+					<string name="LocalizationMatchedSourceText"></string>
 					<int name="MaxVisibleGraphemes">-1</int>
 					<bool name="Modal">false</bool>
 					<string name="Name">TextButton</string>
@@ -1306,6 +1377,7 @@
 					<Ref name="NextSelectionLeft">null</Ref>
 					<Ref name="NextSelectionRight">null</Ref>
 					<Ref name="NextSelectionUp">null</Ref>
+					<string name="OpenTypeFeatures"></string>
 					<UDim2 name="Position">
 						<XS>1</XS>
 						<XO>-110</XO>
@@ -1359,7 +1431,7 @@
 				</Properties>
 			</Item>
 		</Item>
-		<Item class="TextLabel" referent="RBX3BAE43843D2C4B82ACEE5CD9B1B0368E">
+		<Item class="TextLabel" referent="RBX5BCC446A4971418F8253A2AFAFF9FDCC">
 			<Properties>
 				<bool name="Active">false</bool>
 				<Vector2 name="AnchorPoint">
@@ -1382,22 +1454,27 @@
 				</Color3>
 				<token name="BorderMode">0</token>
 				<int name="BorderSizePixel">1</int>
+				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 				<bool name="ClipsDescendants">false</bool>
+				<bool name="DefinesCapabilities">false</bool>
 				<bool name="Draggable">false</bool>
 				<Font name="FontFace">
 					<Family><url>rbxasset://fonts/families/Arial.json</url></Family>
 					<Weight>400</Weight>
 					<Style>Normal</Style>
-					<CachedFaceId><url>rbxasset://fonts/arial.ttf</url></CachedFaceId>
 				</Font>
+				<bool name="Interactable">true</bool>
 				<int name="LayoutOrder">0</int>
 				<float name="LineHeight">1</float>
+				<string name="LocalizationMatchIdentifier"></string>
+				<string name="LocalizationMatchedSourceText"></string>
 				<int name="MaxVisibleGraphemes">-1</int>
 				<string name="Name">String</string>
 				<Ref name="NextSelectionDown">null</Ref>
 				<Ref name="NextSelectionLeft">null</Ref>
 				<Ref name="NextSelectionRight">null</Ref>
 				<Ref name="NextSelectionUp">null</Ref>
+				<string name="OpenTypeFeatures"></string>
 				<UDim2 name="Position">
 					<XS>0</XS>
 					<XO>0</XO>
@@ -1447,16 +1524,18 @@
 				<bool name="Visible">false</bool>
 				<int name="ZIndex">2</int>
 			</Properties>
-			<Item class="StringValue" referent="RBX07082D157F414BF88C3B8FE828BFD9A0">
+			<Item class="StringValue" referent="RBXF566662049BB4C5AAB73C6B95C4824C6">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
 					<string name="Name">Desc</string>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
 					<string name="Value">TestDesc</string>
 				</Properties>
 			</Item>
-			<Item class="TextBox" referent="RBXEA17A5BCE08449F0935717F5625933D9">
+			<Item class="TextBox" referent="RBXEA37C9ACBCA84134964FC97B5891C626">
 				<Properties>
 					<bool name="Active">true</bool>
 					<Vector2 name="AnchorPoint">
@@ -1479,17 +1558,21 @@
 					</Color3>
 					<token name="BorderMode">0</token>
 					<int name="BorderSizePixel">0</int>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 					<bool name="ClearTextOnFocus">true</bool>
 					<bool name="ClipsDescendants">true</bool>
+					<bool name="DefinesCapabilities">false</bool>
 					<bool name="Draggable">false</bool>
 					<Font name="FontFace">
 						<Family><url>rbxasset://fonts/families/Arial.json</url></Family>
 						<Weight>400</Weight>
 						<Style>Normal</Style>
-						<CachedFaceId><url>rbxasset://fonts/arial.ttf</url></CachedFaceId>
 					</Font>
+					<bool name="Interactable">true</bool>
 					<int name="LayoutOrder">0</int>
 					<float name="LineHeight">1</float>
+					<string name="LocalizationMatchIdentifier"></string>
+					<string name="LocalizationMatchedSourceText"></string>
 					<int name="MaxVisibleGraphemes">-1</int>
 					<bool name="MultiLine">false</bool>
 					<string name="Name">TextBox</string>
@@ -1497,6 +1580,7 @@
 					<Ref name="NextSelectionLeft">null</Ref>
 					<Ref name="NextSelectionRight">null</Ref>
 					<Ref name="NextSelectionUp">null</Ref>
+					<string name="OpenTypeFeatures"></string>
 					<Color3 name="PlaceholderColor3">
 						<R>0.699999988</R>
 						<G>0.699999988</G>
@@ -1556,7 +1640,7 @@
 				</Properties>
 			</Item>
 		</Item>
-		<Item class="TextLabel" referent="RBX3FF2414D2FE347E588A8D739C30C2940">
+		<Item class="TextLabel" referent="RBXC3BDF60501674F6A91563248BF1FEC97">
 			<Properties>
 				<bool name="Active">false</bool>
 				<Vector2 name="AnchorPoint">
@@ -1579,22 +1663,27 @@
 				</Color3>
 				<token name="BorderMode">0</token>
 				<int name="BorderSizePixel">1</int>
+				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 				<bool name="ClipsDescendants">false</bool>
+				<bool name="DefinesCapabilities">false</bool>
 				<bool name="Draggable">false</bool>
 				<Font name="FontFace">
 					<Family><url>rbxasset://fonts/families/Arial.json</url></Family>
 					<Weight>400</Weight>
 					<Style>Normal</Style>
-					<CachedFaceId><url>rbxasset://fonts/arial.ttf</url></CachedFaceId>
 				</Font>
+				<bool name="Interactable">true</bool>
 				<int name="LayoutOrder">0</int>
 				<float name="LineHeight">1</float>
+				<string name="LocalizationMatchIdentifier"></string>
+				<string name="LocalizationMatchedSourceText"></string>
 				<int name="MaxVisibleGraphemes">-1</int>
 				<string name="Name">Color</string>
 				<Ref name="NextSelectionDown">null</Ref>
 				<Ref name="NextSelectionLeft">null</Ref>
 				<Ref name="NextSelectionRight">null</Ref>
 				<Ref name="NextSelectionUp">null</Ref>
+				<string name="OpenTypeFeatures"></string>
 				<UDim2 name="Position">
 					<XS>0</XS>
 					<XO>0</XO>
@@ -1644,16 +1733,18 @@
 				<bool name="Visible">false</bool>
 				<int name="ZIndex">2</int>
 			</Properties>
-			<Item class="StringValue" referent="RBXED64B7A5E6C14A31998BBA43DB1EBAD1">
+			<Item class="StringValue" referent="RBXBBA8A1C907BA468C9C894ED755F23ABD">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
 					<string name="Name">Desc</string>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
 					<string name="Value">TestDesc</string>
 				</Properties>
 			</Item>
-			<Item class="TextButton" referent="RBXEBE45247E1CA4817BF4950A05A518E4F">
+			<Item class="TextButton" referent="RBX21F498F2D9ED4EB5A18D2BB6149D1A36">
 				<Properties>
 					<bool name="Active">true</bool>
 					<Vector2 name="AnchorPoint">
@@ -1677,16 +1768,20 @@
 					</Color3>
 					<token name="BorderMode">0</token>
 					<int name="BorderSizePixel">1</int>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 					<bool name="ClipsDescendants">false</bool>
+					<bool name="DefinesCapabilities">false</bool>
 					<bool name="Draggable">false</bool>
 					<Font name="FontFace">
 						<Family><url>rbxasset://fonts/families/Arial.json</url></Family>
 						<Weight>400</Weight>
 						<Style>Normal</Style>
-						<CachedFaceId><url>rbxasset://fonts/arial.ttf</url></CachedFaceId>
 					</Font>
+					<bool name="Interactable">true</bool>
 					<int name="LayoutOrder">0</int>
 					<float name="LineHeight">1</float>
+					<string name="LocalizationMatchIdentifier"></string>
+					<string name="LocalizationMatchedSourceText"></string>
 					<int name="MaxVisibleGraphemes">-1</int>
 					<bool name="Modal">false</bool>
 					<string name="Name">TextButton</string>
@@ -1694,6 +1789,7 @@
 					<Ref name="NextSelectionLeft">null</Ref>
 					<Ref name="NextSelectionRight">null</Ref>
 					<Ref name="NextSelectionUp">null</Ref>
+					<string name="OpenTypeFeatures"></string>
 					<UDim2 name="Position">
 						<XS>1</XS>
 						<XO>-60</XO>
@@ -1746,7 +1842,7 @@
 					<int name="ZIndex">3</int>
 				</Properties>
 			</Item>
-			<Item class="Frame" referent="RBX2226E91E22D146D9BA9782FA018ACDBC">
+			<Item class="Frame" referent="RBXBB2C6881C6A64FD9BB75A7462C8D2261">
 				<Properties>
 					<bool name="Active">false</bool>
 					<Vector2 name="AnchorPoint">
@@ -1769,8 +1865,11 @@
 					</Color3>
 					<token name="BorderMode">0</token>
 					<int name="BorderSizePixel">1</int>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 					<bool name="ClipsDescendants">false</bool>
+					<bool name="DefinesCapabilities">false</bool>
 					<bool name="Draggable">false</bool>
+					<bool name="Interactable">true</bool>
 					<int name="LayoutOrder">0</int>
 					<string name="Name">ColorPicker</string>
 					<Ref name="NextSelectionDown">null</Ref>
@@ -1806,7 +1905,7 @@
 					<bool name="Visible">false</bool>
 					<int name="ZIndex">3</int>
 				</Properties>
-				<Item class="Frame" referent="RBX5FFD30B8F0EE41A9BD17CF6A15386101">
+				<Item class="Frame" referent="RBX5A87D8DF02344C619406CBD29CD418B0">
 					<Properties>
 						<bool name="Active">false</bool>
 						<Vector2 name="AnchorPoint">
@@ -1829,8 +1928,11 @@
 						</Color3>
 						<token name="BorderMode">0</token>
 						<int name="BorderSizePixel">1</int>
+						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 						<bool name="ClipsDescendants">false</bool>
+						<bool name="DefinesCapabilities">false</bool>
 						<bool name="Draggable">false</bool>
+						<bool name="Interactable">true</bool>
 						<int name="LayoutOrder">0</int>
 						<string name="Name">Frame</string>
 						<Ref name="NextSelectionDown">null</Ref>
@@ -1866,7 +1968,7 @@
 						<bool name="Visible">true</bool>
 						<int name="ZIndex">3</int>
 					</Properties>
-					<Item class="TextBox" referent="RBX02EB59932B9A43548A53A15B547D8EB2">
+					<Item class="TextBox" referent="RBXCBF391B4BBB74F388CBFEC165FA62E74">
 						<Properties>
 							<bool name="Active">true</bool>
 							<Vector2 name="AnchorPoint">
@@ -1889,17 +1991,21 @@
 							</Color3>
 							<token name="BorderMode">0</token>
 							<int name="BorderSizePixel">0</int>
+							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 							<bool name="ClearTextOnFocus">false</bool>
 							<bool name="ClipsDescendants">false</bool>
+							<bool name="DefinesCapabilities">false</bool>
 							<bool name="Draggable">false</bool>
 							<Font name="FontFace">
 								<Family><url>rbxasset://fonts/families/SourceSansPro.json</url></Family>
 								<Weight>400</Weight>
 								<Style>Normal</Style>
-								<CachedFaceId><url>rbxasset://fonts/SourceSansPro-Regular.ttf</url></CachedFaceId>
 							</Font>
+							<bool name="Interactable">true</bool>
 							<int name="LayoutOrder">0</int>
 							<float name="LineHeight">1</float>
+							<string name="LocalizationMatchIdentifier"></string>
+							<string name="LocalizationMatchedSourceText"></string>
 							<int name="MaxVisibleGraphemes">-1</int>
 							<bool name="MultiLine">false</bool>
 							<string name="Name">B</string>
@@ -1907,6 +2013,7 @@
 							<Ref name="NextSelectionLeft">null</Ref>
 							<Ref name="NextSelectionRight">null</Ref>
 							<Ref name="NextSelectionUp">null</Ref>
+							<string name="OpenTypeFeatures"></string>
 							<Color3 name="PlaceholderColor3">
 								<R>0.699999988</R>
 								<G>0.699999988</G>
@@ -1965,7 +2072,7 @@
 							<int name="ZIndex">3</int>
 						</Properties>
 					</Item>
-					<Item class="TextLabel" referent="RBX614013CC69524090807984A9A1151B21">
+					<Item class="TextLabel" referent="RBX79270CE09FE54BAE87AAF7C78BE4C1C3">
 						<Properties>
 							<bool name="Active">false</bool>
 							<Vector2 name="AnchorPoint">
@@ -1988,22 +2095,27 @@
 							</Color3>
 							<token name="BorderMode">0</token>
 							<int name="BorderSizePixel">0</int>
+							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 							<bool name="ClipsDescendants">false</bool>
+							<bool name="DefinesCapabilities">false</bool>
 							<bool name="Draggable">false</bool>
 							<Font name="FontFace">
 								<Family><url>rbxasset://fonts/families/SourceSansPro.json</url></Family>
 								<Weight>400</Weight>
 								<Style>Normal</Style>
-								<CachedFaceId><url>rbxasset://fonts/SourceSansPro-Regular.ttf</url></CachedFaceId>
 							</Font>
+							<bool name="Interactable">true</bool>
 							<int name="LayoutOrder">0</int>
 							<float name="LineHeight">1</float>
+							<string name="LocalizationMatchIdentifier"></string>
+							<string name="LocalizationMatchedSourceText"></string>
 							<int name="MaxVisibleGraphemes">-1</int>
 							<string name="Name">Red</string>
 							<Ref name="NextSelectionDown">null</Ref>
 							<Ref name="NextSelectionLeft">null</Ref>
 							<Ref name="NextSelectionRight">null</Ref>
 							<Ref name="NextSelectionUp">null</Ref>
+							<string name="OpenTypeFeatures"></string>
 							<UDim2 name="Position">
 								<XS>0</XS>
 								<XO>5</XO>
@@ -2054,7 +2166,7 @@
 							<int name="ZIndex">3</int>
 						</Properties>
 					</Item>
-					<Item class="TextBox" referent="RBXB8A7467A9234448A8A252B520ACAE462">
+					<Item class="TextBox" referent="RBXBA39E19A56C948B782F9253AF8D35F1C">
 						<Properties>
 							<bool name="Active">true</bool>
 							<Vector2 name="AnchorPoint">
@@ -2077,17 +2189,21 @@
 							</Color3>
 							<token name="BorderMode">0</token>
 							<int name="BorderSizePixel">0</int>
+							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 							<bool name="ClearTextOnFocus">false</bool>
 							<bool name="ClipsDescendants">false</bool>
+							<bool name="DefinesCapabilities">false</bool>
 							<bool name="Draggable">false</bool>
 							<Font name="FontFace">
 								<Family><url>rbxasset://fonts/families/SourceSansPro.json</url></Family>
 								<Weight>400</Weight>
 								<Style>Normal</Style>
-								<CachedFaceId><url>rbxasset://fonts/SourceSansPro-Regular.ttf</url></CachedFaceId>
 							</Font>
+							<bool name="Interactable">true</bool>
 							<int name="LayoutOrder">0</int>
 							<float name="LineHeight">1</float>
+							<string name="LocalizationMatchIdentifier"></string>
+							<string name="LocalizationMatchedSourceText"></string>
 							<int name="MaxVisibleGraphemes">-1</int>
 							<bool name="MultiLine">false</bool>
 							<string name="Name">R</string>
@@ -2095,6 +2211,7 @@
 							<Ref name="NextSelectionLeft">null</Ref>
 							<Ref name="NextSelectionRight">null</Ref>
 							<Ref name="NextSelectionUp">null</Ref>
+							<string name="OpenTypeFeatures"></string>
 							<Color3 name="PlaceholderColor3">
 								<R>0.699999988</R>
 								<G>0.699999988</G>
@@ -2153,7 +2270,7 @@
 							<int name="ZIndex">3</int>
 						</Properties>
 					</Item>
-					<Item class="TextBox" referent="RBX0F940C9BF9A9441DB10953886268524F">
+					<Item class="TextBox" referent="RBX5E6ED9E13AE040D1BC3D815879C4FC5A">
 						<Properties>
 							<bool name="Active">true</bool>
 							<Vector2 name="AnchorPoint">
@@ -2176,17 +2293,21 @@
 							</Color3>
 							<token name="BorderMode">0</token>
 							<int name="BorderSizePixel">0</int>
+							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 							<bool name="ClearTextOnFocus">false</bool>
 							<bool name="ClipsDescendants">false</bool>
+							<bool name="DefinesCapabilities">false</bool>
 							<bool name="Draggable">false</bool>
 							<Font name="FontFace">
 								<Family><url>rbxasset://fonts/families/SourceSansPro.json</url></Family>
 								<Weight>400</Weight>
 								<Style>Normal</Style>
-								<CachedFaceId><url>rbxasset://fonts/SourceSansPro-Regular.ttf</url></CachedFaceId>
 							</Font>
+							<bool name="Interactable">true</bool>
 							<int name="LayoutOrder">0</int>
 							<float name="LineHeight">1</float>
+							<string name="LocalizationMatchIdentifier"></string>
+							<string name="LocalizationMatchedSourceText"></string>
 							<int name="MaxVisibleGraphemes">-1</int>
 							<bool name="MultiLine">false</bool>
 							<string name="Name">G</string>
@@ -2194,6 +2315,7 @@
 							<Ref name="NextSelectionLeft">null</Ref>
 							<Ref name="NextSelectionRight">null</Ref>
 							<Ref name="NextSelectionUp">null</Ref>
+							<string name="OpenTypeFeatures"></string>
 							<Color3 name="PlaceholderColor3">
 								<R>0.699999988</R>
 								<G>0.699999988</G>
@@ -2252,7 +2374,7 @@
 							<int name="ZIndex">3</int>
 						</Properties>
 					</Item>
-					<Item class="TextLabel" referent="RBX79620F947815487D820DCD9BAE779663">
+					<Item class="TextLabel" referent="RBXFA20C70AA52A4F87BED0985F15705DB2">
 						<Properties>
 							<bool name="Active">false</bool>
 							<Vector2 name="AnchorPoint">
@@ -2275,22 +2397,27 @@
 							</Color3>
 							<token name="BorderMode">0</token>
 							<int name="BorderSizePixel">0</int>
+							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 							<bool name="ClipsDescendants">false</bool>
+							<bool name="DefinesCapabilities">false</bool>
 							<bool name="Draggable">false</bool>
 							<Font name="FontFace">
 								<Family><url>rbxasset://fonts/families/SourceSansPro.json</url></Family>
 								<Weight>400</Weight>
 								<Style>Normal</Style>
-								<CachedFaceId><url>rbxasset://fonts/SourceSansPro-Regular.ttf</url></CachedFaceId>
 							</Font>
+							<bool name="Interactable">true</bool>
 							<int name="LayoutOrder">0</int>
 							<float name="LineHeight">1</float>
+							<string name="LocalizationMatchIdentifier"></string>
+							<string name="LocalizationMatchedSourceText"></string>
 							<int name="MaxVisibleGraphemes">-1</int>
 							<string name="Name">Green</string>
 							<Ref name="NextSelectionDown">null</Ref>
 							<Ref name="NextSelectionLeft">null</Ref>
 							<Ref name="NextSelectionRight">null</Ref>
 							<Ref name="NextSelectionUp">null</Ref>
+							<string name="OpenTypeFeatures"></string>
 							<UDim2 name="Position">
 								<XS>0</XS>
 								<XO>50</XO>
@@ -2341,7 +2468,7 @@
 							<int name="ZIndex">3</int>
 						</Properties>
 					</Item>
-					<Item class="TextLabel" referent="RBXB38FC57400BD49BF8B98D5A859DD2DEE">
+					<Item class="TextLabel" referent="RBX0A2888F6EFAA443EA114502C2D5BA45F">
 						<Properties>
 							<bool name="Active">false</bool>
 							<Vector2 name="AnchorPoint">
@@ -2364,22 +2491,27 @@
 							</Color3>
 							<token name="BorderMode">0</token>
 							<int name="BorderSizePixel">0</int>
+							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 							<bool name="ClipsDescendants">false</bool>
+							<bool name="DefinesCapabilities">false</bool>
 							<bool name="Draggable">false</bool>
 							<Font name="FontFace">
 								<Family><url>rbxasset://fonts/families/SourceSansPro.json</url></Family>
 								<Weight>400</Weight>
 								<Style>Normal</Style>
-								<CachedFaceId><url>rbxasset://fonts/SourceSansPro-Regular.ttf</url></CachedFaceId>
 							</Font>
+							<bool name="Interactable">true</bool>
 							<int name="LayoutOrder">0</int>
 							<float name="LineHeight">1</float>
+							<string name="LocalizationMatchIdentifier"></string>
+							<string name="LocalizationMatchedSourceText"></string>
 							<int name="MaxVisibleGraphemes">-1</int>
 							<string name="Name">Blue</string>
 							<Ref name="NextSelectionDown">null</Ref>
 							<Ref name="NextSelectionLeft">null</Ref>
 							<Ref name="NextSelectionRight">null</Ref>
 							<Ref name="NextSelectionUp">null</Ref>
+							<string name="OpenTypeFeatures"></string>
 							<UDim2 name="Position">
 								<XS>0</XS>
 								<XO>95</XO>
@@ -2430,7 +2562,7 @@
 							<int name="ZIndex">3</int>
 						</Properties>
 					</Item>
-					<Item class="Frame" referent="RBX29071AE04E5E4F03A69A492CB0FE125C">
+					<Item class="Frame" referent="RBXAAB9FECE162D410EAC9B2B27E3C327D1">
 						<Properties>
 							<bool name="Active">false</bool>
 							<Vector2 name="AnchorPoint">
@@ -2453,8 +2585,11 @@
 							</Color3>
 							<token name="BorderMode">0</token>
 							<int name="BorderSizePixel">0</int>
+							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 							<bool name="ClipsDescendants">false</bool>
+							<bool name="DefinesCapabilities">false</bool>
 							<bool name="Draggable">false</bool>
+							<bool name="Interactable">true</bool>
 							<int name="LayoutOrder">0</int>
 							<string name="Name">Color</string>
 							<Ref name="NextSelectionDown">null</Ref>
@@ -2491,7 +2626,7 @@
 							<int name="ZIndex">3</int>
 						</Properties>
 					</Item>
-					<Item class="TextButton" referent="RBX2809DDB8EE0849158047345B491F0032">
+					<Item class="TextButton" referent="RBX898A102036024086B7452B44766204E4">
 						<Properties>
 							<bool name="Active">true</bool>
 							<Vector2 name="AnchorPoint">
@@ -2515,16 +2650,20 @@
 							</Color3>
 							<token name="BorderMode">0</token>
 							<int name="BorderSizePixel">0</int>
+							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 							<bool name="ClipsDescendants">false</bool>
+							<bool name="DefinesCapabilities">false</bool>
 							<bool name="Draggable">false</bool>
 							<Font name="FontFace">
 								<Family><url>rbxasset://fonts/families/SourceSansPro.json</url></Family>
 								<Weight>400</Weight>
 								<Style>Normal</Style>
-								<CachedFaceId><url>rbxasset://fonts/SourceSansPro-Regular.ttf</url></CachedFaceId>
 							</Font>
+							<bool name="Interactable">true</bool>
 							<int name="LayoutOrder">0</int>
 							<float name="LineHeight">1</float>
+							<string name="LocalizationMatchIdentifier"></string>
+							<string name="LocalizationMatchedSourceText"></string>
 							<int name="MaxVisibleGraphemes">-1</int>
 							<bool name="Modal">false</bool>
 							<string name="Name">Confirm</string>
@@ -2532,6 +2671,7 @@
 							<Ref name="NextSelectionLeft">null</Ref>
 							<Ref name="NextSelectionRight">null</Ref>
 							<Ref name="NextSelectionUp">null</Ref>
+							<string name="OpenTypeFeatures"></string>
 							<UDim2 name="Position">
 								<XS>0</XS>
 								<XO>5</XO>
@@ -2587,19 +2727,23 @@
 				</Item>
 			</Item>
 		</Item>
-		<Item class="Folder" referent="RBXB799EB9A21264DC4A3E30133EF0B5C0B">
+		<Item class="Folder" referent="RBX0F1F7A070C4B40BB83259D13E450158F">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
+				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+				<bool name="DefinesCapabilities">false</bool>
 				<string name="Name">Config</string>
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="ModuleScript" referent="RBXC299BE9545C44572A4DDE9D20FE57CA7">
+			<Item class="ModuleScript" referent="RBXAF2BBA59FBDC496393B8EB784A9F9546">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
 					<Content name="LinkedSource"><null></null></Content>
 					<string name="Name">Code</string>
-					<string name="ScriptGuid">{8A117246-F894-4E2A-BC81-DA79139EC24A}</string>
+					<string name="ScriptGuid">{7462E58B-59C7-4C6B-B39F-0E89AC36655F}</string>
 					<ProtectedString name="Source"><![CDATA[client, Pcall, Routine, service = nil, nil, nil, nil
 
 --// All global vars will be wiped/replaced except script
@@ -2797,18 +2941,22 @@ end
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="BoolValue" referent="RBX74D5B4FD850A4FE68E02878C3758A94E">
+			<Item class="BoolValue" referent="RBX6565F0A4B83F446A96DE631A92EC9415">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
 					<string name="Name">AllowMultiple</string>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
 					<bool name="Value">false</bool>
 				</Properties>
 			</Item>
-			<Item class="BoolValue" referent="RBXD812162E14904C028844F619557DE6D1">
+			<Item class="BoolValue" referent="RBX10A867B026FB4CC98FEBFAAA95ADAD72">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
 					<string name="Name">CanKeepAlive</string>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
@@ -2816,7 +2964,7 @@ end
 				</Properties>
 			</Item>
 		</Item>
-		<Item class="Frame" referent="RBX5616D75BD8904B2BB22C39F388FF48E3">
+		<Item class="Frame" referent="RBXA3D2C7BBAFFE4A5082BA637FBA83139F">
 			<Properties>
 				<bool name="Active">false</bool>
 				<Vector2 name="AnchorPoint">
@@ -2839,8 +2987,11 @@ end
 				</Color3>
 				<token name="BorderMode">0</token>
 				<int name="BorderSizePixel">1</int>
+				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 				<bool name="ClipsDescendants">false</bool>
+				<bool name="DefinesCapabilities">false</bool>
 				<bool name="Draggable">false</bool>
+				<bool name="Interactable">true</bool>
 				<int name="LayoutOrder">0</int>
 				<string name="Name">Desc</string>
 				<Ref name="NextSelectionDown">null</Ref>
@@ -2876,7 +3027,7 @@ end
 				<bool name="Visible">false</bool>
 				<int name="ZIndex">9</int>
 			</Properties>
-			<Item class="TextLabel" referent="RBXDCC34552913845C7AF7883C5D3F113D5">
+			<Item class="TextLabel" referent="RBX22F011B95D9346479D94BA033F44C3D8">
 				<Properties>
 					<bool name="Active">false</bool>
 					<Vector2 name="AnchorPoint">
@@ -2899,22 +3050,27 @@ end
 					</Color3>
 					<token name="BorderMode">0</token>
 					<int name="BorderSizePixel">1</int>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 					<bool name="ClipsDescendants">false</bool>
+					<bool name="DefinesCapabilities">false</bool>
 					<bool name="Draggable">false</bool>
 					<Font name="FontFace">
 						<Family><url>rbxasset://fonts/families/SourceSansPro.json</url></Family>
 						<Weight>400</Weight>
 						<Style>Normal</Style>
-						<CachedFaceId><url>rbxasset://fonts/SourceSansPro-Regular.ttf</url></CachedFaceId>
 					</Font>
+					<bool name="Interactable">true</bool>
 					<int name="LayoutOrder">0</int>
 					<float name="LineHeight">1</float>
+					<string name="LocalizationMatchIdentifier"></string>
+					<string name="LocalizationMatchedSourceText"></string>
 					<int name="MaxVisibleGraphemes">-1</int>
 					<string name="Name">Label</string>
 					<Ref name="NextSelectionDown">null</Ref>
 					<Ref name="NextSelectionLeft">null</Ref>
 					<Ref name="NextSelectionRight">null</Ref>
 					<Ref name="NextSelectionUp">null</Ref>
+					<string name="OpenTypeFeatures"></string>
 					<UDim2 name="Position">
 						<XS>0</XS>
 						<XO>2</XO>
@@ -2966,7 +3122,7 @@ end
 				</Properties>
 			</Item>
 		</Item>
-		<Item class="Frame" referent="RBX467AB89EC5DD423F963C055D7850F8C3">
+		<Item class="Frame" referent="RBXCA52A8E321FD4706BC2DD40D20BB4417">
 			<Properties>
 				<bool name="Active">false</bool>
 				<Vector2 name="AnchorPoint">
@@ -2989,8 +3145,11 @@ end
 				</Color3>
 				<token name="BorderMode">0</token>
 				<int name="BorderSizePixel">1</int>
+				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 				<bool name="ClipsDescendants">false</bool>
+				<bool name="DefinesCapabilities">false</bool>
 				<bool name="Draggable">false</bool>
+				<bool name="Interactable">true</bool>
 				<int name="LayoutOrder">0</int>
 				<string name="Name">Entry</string>
 				<Ref name="NextSelectionDown">null</Ref>
@@ -3026,7 +3185,7 @@ end
 				<bool name="Visible">false</bool>
 				<int name="ZIndex">2</int>
 			</Properties>
-			<Item class="TextLabel" referent="RBXCFC20A6F3F2F427189A115A48B55E330">
+			<Item class="TextLabel" referent="RBXF090D00C67504AF4ABC2882AB3943F92">
 				<Properties>
 					<bool name="Active">false</bool>
 					<Vector2 name="AnchorPoint">
@@ -3049,22 +3208,27 @@ end
 					</Color3>
 					<token name="BorderMode">0</token>
 					<int name="BorderSizePixel">1</int>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 					<bool name="ClipsDescendants">false</bool>
+					<bool name="DefinesCapabilities">false</bool>
 					<bool name="Draggable">false</bool>
 					<Font name="FontFace">
 						<Family><url>rbxasset://fonts/families/SourceSansPro.json</url></Family>
 						<Weight>400</Weight>
 						<Style>Normal</Style>
-						<CachedFaceId><url>rbxasset://fonts/SourceSansPro-Regular.ttf</url></CachedFaceId>
 					</Font>
+					<bool name="Interactable">true</bool>
 					<int name="LayoutOrder">0</int>
 					<float name="LineHeight">1</float>
+					<string name="LocalizationMatchIdentifier"></string>
+					<string name="LocalizationMatchedSourceText"></string>
 					<int name="MaxVisibleGraphemes">-1</int>
 					<string name="Name">Dot</string>
 					<Ref name="NextSelectionDown">null</Ref>
 					<Ref name="NextSelectionLeft">null</Ref>
 					<Ref name="NextSelectionRight">null</Ref>
 					<Ref name="NextSelectionUp">null</Ref>
+					<string name="OpenTypeFeatures"></string>
 					<UDim2 name="Position">
 						<XS>1</XS>
 						<XO>-10</XO>
@@ -3115,16 +3279,18 @@ end
 					<int name="ZIndex">2</int>
 				</Properties>
 			</Item>
-			<Item class="StringValue" referent="RBXAC3A47A34B8944DF9A2DC19FFBB170F1">
+			<Item class="StringValue" referent="RBX4C9F3CCBBE3E4E8597DA8733D8999EB4">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
 					<string name="Name">Desc</string>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
 					<string name="Value">TestDesc</string>
 				</Properties>
 			</Item>
-			<Item class="Frame" referent="RBX6442049E09004CD9B1017E56B34ACDFF">
+			<Item class="Frame" referent="RBXF808DB7A78164F4C9AB6E2B549755371">
 				<Properties>
 					<bool name="Active">false</bool>
 					<Vector2 name="AnchorPoint">
@@ -3147,8 +3313,11 @@ end
 					</Color3>
 					<token name="BorderMode">0</token>
 					<int name="BorderSizePixel">1</int>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 					<bool name="ClipsDescendants">false</bool>
+					<bool name="DefinesCapabilities">false</bool>
 					<bool name="Draggable">false</bool>
+					<bool name="Interactable">true</bool>
 					<int name="LayoutOrder">0</int>
 					<string name="Name">Frame</string>
 					<Ref name="NextSelectionDown">null</Ref>
@@ -3184,7 +3353,7 @@ end
 					<bool name="Visible">true</bool>
 					<int name="ZIndex">1</int>
 				</Properties>
-				<Item class="TextLabel" referent="RBX81EFFBB6547E4E778576FB926B024B91">
+				<Item class="TextLabel" referent="RBXF4AD0131A06F4AD68FAB46BE9191527F">
 					<Properties>
 						<bool name="Active">false</bool>
 						<Vector2 name="AnchorPoint">
@@ -3207,22 +3376,27 @@ end
 						</Color3>
 						<token name="BorderMode">0</token>
 						<int name="BorderSizePixel">1</int>
+						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 						<bool name="ClipsDescendants">true</bool>
+						<bool name="DefinesCapabilities">false</bool>
 						<bool name="Draggable">false</bool>
 						<Font name="FontFace">
 							<Family><url>rbxasset://fonts/families/Arial.json</url></Family>
 							<Weight>400</Weight>
 							<Style>Normal</Style>
-							<CachedFaceId><url>rbxasset://fonts/arial.ttf</url></CachedFaceId>
 						</Font>
+						<bool name="Interactable">true</bool>
 						<int name="LayoutOrder">0</int>
 						<float name="LineHeight">1</float>
+						<string name="LocalizationMatchIdentifier"></string>
+						<string name="LocalizationMatchedSourceText"></string>
 						<int name="MaxVisibleGraphemes">-1</int>
 						<string name="Name">Text</string>
 						<Ref name="NextSelectionDown">null</Ref>
 						<Ref name="NextSelectionLeft">null</Ref>
 						<Ref name="NextSelectionRight">null</Ref>
 						<Ref name="NextSelectionUp">null</Ref>
+						<string name="OpenTypeFeatures"></string>
 						<UDim2 name="Position">
 							<XS>0</XS>
 							<XO>0</XO>
@@ -3273,7 +3447,7 @@ end
 						<int name="ZIndex">2</int>
 					</Properties>
 				</Item>
-				<Item class="TextButton" referent="RBX373D2AD2459E4422B8326ADAB512741E">
+				<Item class="TextButton" referent="RBX341A42E27DC5492B8FBCAC44804EAB9F">
 					<Properties>
 						<bool name="Active">true</bool>
 						<Vector2 name="AnchorPoint">
@@ -3297,16 +3471,20 @@ end
 						</Color3>
 						<token name="BorderMode">0</token>
 						<int name="BorderSizePixel">0</int>
+						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 						<bool name="ClipsDescendants">false</bool>
+						<bool name="DefinesCapabilities">false</bool>
 						<bool name="Draggable">false</bool>
 						<Font name="FontFace">
 							<Family><url>rbxasset://fonts/families/Arial.json</url></Family>
 							<Weight>400</Weight>
 							<Style>Normal</Style>
-							<CachedFaceId><url>rbxasset://fonts/arial.ttf</url></CachedFaceId>
 						</Font>
+						<bool name="Interactable">true</bool>
 						<int name="LayoutOrder">0</int>
 						<float name="LineHeight">1</float>
+						<string name="LocalizationMatchIdentifier"></string>
+						<string name="LocalizationMatchedSourceText"></string>
 						<int name="MaxVisibleGraphemes">-1</int>
 						<bool name="Modal">false</bool>
 						<string name="Name">Resume</string>
@@ -3314,6 +3492,7 @@ end
 						<Ref name="NextSelectionLeft">null</Ref>
 						<Ref name="NextSelectionRight">null</Ref>
 						<Ref name="NextSelectionUp">null</Ref>
+						<string name="OpenTypeFeatures"></string>
 						<UDim2 name="Position">
 							<XS>1</XS>
 							<XO>-70</XO>
@@ -3366,7 +3545,7 @@ end
 						<int name="ZIndex">10</int>
 					</Properties>
 				</Item>
-				<Item class="TextButton" referent="RBXCC87C41D5EC94A2EB54D1800D574B5A8">
+				<Item class="TextButton" referent="RBX0136CB9452544FF7A2B6F2B64DFA3F3D">
 					<Properties>
 						<bool name="Active">true</bool>
 						<Vector2 name="AnchorPoint">
@@ -3390,16 +3569,20 @@ end
 						</Color3>
 						<token name="BorderMode">0</token>
 						<int name="BorderSizePixel">0</int>
+						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 						<bool name="ClipsDescendants">false</bool>
+						<bool name="DefinesCapabilities">false</bool>
 						<bool name="Draggable">false</bool>
 						<Font name="FontFace">
 							<Family><url>rbxasset://fonts/families/Arial.json</url></Family>
 							<Weight>400</Weight>
 							<Style>Normal</Style>
-							<CachedFaceId><url>rbxasset://fonts/arial.ttf</url></CachedFaceId>
 						</Font>
+						<bool name="Interactable">true</bool>
 						<int name="LayoutOrder">0</int>
 						<float name="LineHeight">1</float>
+						<string name="LocalizationMatchIdentifier"></string>
+						<string name="LocalizationMatchedSourceText"></string>
 						<int name="MaxVisibleGraphemes">-1</int>
 						<bool name="Modal">false</bool>
 						<string name="Name">Kill</string>
@@ -3407,6 +3590,7 @@ end
 						<Ref name="NextSelectionLeft">null</Ref>
 						<Ref name="NextSelectionRight">null</Ref>
 						<Ref name="NextSelectionUp">null</Ref>
+						<string name="OpenTypeFeatures"></string>
 						<UDim2 name="Position">
 							<XS>1</XS>
 							<XO>-230</XO>
@@ -3459,7 +3643,7 @@ end
 						<int name="ZIndex">10</int>
 					</Properties>
 				</Item>
-				<Item class="TextButton" referent="RBX2E70D61930EE40BF9C345E12E3808BC2">
+				<Item class="TextButton" referent="RBX6129428B06634D2ABAA6BE4DE5CA4FBA">
 					<Properties>
 						<bool name="Active">true</bool>
 						<Vector2 name="AnchorPoint">
@@ -3483,16 +3667,20 @@ end
 						</Color3>
 						<token name="BorderMode">0</token>
 						<int name="BorderSizePixel">0</int>
+						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 						<bool name="ClipsDescendants">false</bool>
+						<bool name="DefinesCapabilities">false</bool>
 						<bool name="Draggable">false</bool>
 						<Font name="FontFace">
 							<Family><url>rbxasset://fonts/families/Arial.json</url></Family>
 							<Weight>400</Weight>
 							<Style>Normal</Style>
-							<CachedFaceId><url>rbxasset://fonts/arial.ttf</url></CachedFaceId>
 						</Font>
+						<bool name="Interactable">true</bool>
 						<int name="LayoutOrder">0</int>
 						<float name="LineHeight">1</float>
+						<string name="LocalizationMatchIdentifier"></string>
+						<string name="LocalizationMatchedSourceText"></string>
 						<int name="MaxVisibleGraphemes">-1</int>
 						<bool name="Modal">false</bool>
 						<string name="Name">Stop</string>
@@ -3500,6 +3688,7 @@ end
 						<Ref name="NextSelectionLeft">null</Ref>
 						<Ref name="NextSelectionRight">null</Ref>
 						<Ref name="NextSelectionUp">null</Ref>
+						<string name="OpenTypeFeatures"></string>
 						<UDim2 name="Position">
 							<XS>1</XS>
 							<XO>-175</XO>
@@ -3552,7 +3741,7 @@ end
 						<int name="ZIndex">10</int>
 					</Properties>
 				</Item>
-				<Item class="TextLabel" referent="RBX800D5E65AAC04AEA987CEE66706D5A15">
+				<Item class="TextLabel" referent="RBX5E7968501A164D27A5CD32BDD28D37BA">
 					<Properties>
 						<bool name="Active">false</bool>
 						<Vector2 name="AnchorPoint">
@@ -3575,22 +3764,27 @@ end
 						</Color3>
 						<token name="BorderMode">0</token>
 						<int name="BorderSizePixel">1</int>
+						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 						<bool name="ClipsDescendants">true</bool>
+						<bool name="DefinesCapabilities">false</bool>
 						<bool name="Draggable">false</bool>
 						<Font name="FontFace">
 							<Family><url>rbxasset://fonts/families/Arial.json</url></Family>
 							<Weight>400</Weight>
 							<Style>Normal</Style>
-							<CachedFaceId><url>rbxasset://fonts/arial.ttf</url></CachedFaceId>
 						</Font>
+						<bool name="Interactable">true</bool>
 						<int name="LayoutOrder">0</int>
 						<float name="LineHeight">1</float>
+						<string name="LocalizationMatchIdentifier"></string>
+						<string name="LocalizationMatchedSourceText"></string>
 						<int name="MaxVisibleGraphemes">-1</int>
 						<string name="Name">Status</string>
 						<Ref name="NextSelectionDown">null</Ref>
 						<Ref name="NextSelectionLeft">null</Ref>
 						<Ref name="NextSelectionRight">null</Ref>
 						<Ref name="NextSelectionUp">null</Ref>
+						<string name="OpenTypeFeatures"></string>
 						<UDim2 name="Position">
 							<XS>1</XS>
 							<XO>-310</XO>
@@ -3642,7 +3836,7 @@ end
 					</Properties>
 				</Item>
 			</Item>
-			<Item class="TextLabel" referent="RBXF7FB963E27634EDFA870782CC1539FB4">
+			<Item class="TextLabel" referent="RBX8E581C57892D435E84D789B213D8655B">
 				<Properties>
 					<bool name="Active">false</bool>
 					<Vector2 name="AnchorPoint">
@@ -3665,22 +3859,27 @@ end
 					</Color3>
 					<token name="BorderMode">0</token>
 					<int name="BorderSizePixel">1</int>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 					<bool name="ClipsDescendants">true</bool>
+					<bool name="DefinesCapabilities">false</bool>
 					<bool name="Draggable">false</bool>
 					<Font name="FontFace">
 						<Family><url>rbxasset://fonts/families/Arial.json</url></Family>
 						<Weight>400</Weight>
 						<Style>Normal</Style>
-						<CachedFaceId><url>rbxasset://fonts/arial.ttf</url></CachedFaceId>
 					</Font>
+					<bool name="Interactable">true</bool>
 					<int name="LayoutOrder">0</int>
 					<float name="LineHeight">1</float>
+					<string name="LocalizationMatchIdentifier"></string>
+					<string name="LocalizationMatchedSourceText"></string>
 					<int name="MaxVisibleGraphemes">-1</int>
 					<string name="Name">Decor</string>
 					<Ref name="NextSelectionDown">null</Ref>
 					<Ref name="NextSelectionLeft">null</Ref>
 					<Ref name="NextSelectionRight">null</Ref>
 					<Ref name="NextSelectionUp">null</Ref>
+					<string name="OpenTypeFeatures"></string>
 					<UDim2 name="Position">
 						<XS>0</XS>
 						<XO>0</XO>

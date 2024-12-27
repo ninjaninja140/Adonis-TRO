@@ -2,7 +2,7 @@
 	<Meta name="ExplicitAutoJoints">true</Meta>
 	<External>null</External>
 	<External>nil</External>
-	<Item class="Frame" referent="RBXB0FD0627BE754C9B87F5BC70AE95055B">
+	<Item class="Frame" referent="RBX8BC6B831137F444EB2055C7DDEC2BD22">
 		<Properties>
 			<bool name="Active">false</bool>
 			<Vector2 name="AnchorPoint">
@@ -13,11 +13,11 @@
 			<bool name="AutoLocalize">false</bool>
 			<token name="AutomaticSize">0</token>
 			<Color3 name="BackgroundColor3">
-				<R>0.227450997</R>
-				<G>0.227450997</G>
-				<B>0.227450997</B>
+				<R>0.215686277</R>
+				<G>0.215686277</G>
+				<B>0.215686277</B>
 			</Color3>
-			<float name="BackgroundTransparency">0.699999988</float>
+			<float name="BackgroundTransparency">0.5</float>
 			<Color3 name="BorderColor3">
 				<R>1</R>
 				<G>1</G>
@@ -25,8 +25,11 @@
 			</Color3>
 			<token name="BorderMode">0</token>
 			<int name="BorderSizePixel">0</int>
+			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 			<bool name="ClipsDescendants">false</bool>
+			<bool name="DefinesCapabilities">false</bool>
 			<bool name="Draggable">false</bool>
+			<bool name="Interactable">true</bool>
 			<int name="LayoutOrder">0</int>
 			<string name="Name">Hint</string>
 			<Ref name="NextSelectionDown">null</Ref>
@@ -53,7 +56,7 @@
 				<XS>1</XS>
 				<XO>0</XO>
 				<YS>0</YS>
-				<YO>30</YO>
+				<YO>35</YO>
 			</UDim2>
 			<token name="SizeConstraint">0</token>
 			<int64 name="SourceAssetId">-1</int64>
@@ -62,7 +65,7 @@
 			<bool name="Visible">true</bool>
 			<int name="ZIndex">1</int>
 		</Properties>
-		<Item class="Frame" referent="RBX58492D1C0AAB4241B60E696929759435">
+		<Item class="Frame" referent="RBX90E318C40B7A49F08342FF7CFF1385D8">
 			<Properties>
 				<bool name="Active">false</bool>
 				<Vector2 name="AnchorPoint">
@@ -77,7 +80,7 @@
 					<G>0.0705882385</G>
 					<B>0.0705882385</B>
 				</Color3>
-				<float name="BackgroundTransparency">0.699999988</float>
+				<float name="BackgroundTransparency">1</float>
 				<Color3 name="BorderColor3">
 					<R>0.105882362</R>
 					<G>0.164705887</G>
@@ -85,8 +88,11 @@
 				</Color3>
 				<token name="BorderMode">0</token>
 				<int name="BorderSizePixel">0</int>
+				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 				<bool name="ClipsDescendants">false</bool>
+				<bool name="DefinesCapabilities">false</bool>
 				<bool name="Draggable">false</bool>
+				<bool name="Interactable">true</bool>
 				<int name="LayoutOrder">0</int>
 				<string name="Name">Frame</string>
 				<Ref name="NextSelectionDown">null</Ref>
@@ -112,8 +118,8 @@
 				<UDim2 name="Size">
 					<XS>1</XS>
 					<XO>0</XO>
-					<YS>0</YS>
-					<YO>28</YO>
+					<YS>1</YS>
+					<YO>0</YO>
 				</UDim2>
 				<token name="SizeConstraint">0</token>
 				<int64 name="SourceAssetId">-1</int64>
@@ -122,7 +128,7 @@
 				<bool name="Visible">true</bool>
 				<int name="ZIndex">1</int>
 			</Properties>
-			<Item class="TextLabel" referent="RBX6C0DEC3DA4114F3181183D50887C476A">
+			<Item class="TextLabel" referent="RBXB42E1796E89042C795FABE3D891130CF">
 				<Properties>
 					<bool name="Active">false</bool>
 					<Vector2 name="AnchorPoint">
@@ -145,22 +151,27 @@
 					</Color3>
 					<token name="BorderMode">0</token>
 					<int name="BorderSizePixel">1</int>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 					<bool name="ClipsDescendants">false</bool>
+					<bool name="DefinesCapabilities">false</bool>
 					<bool name="Draggable">false</bool>
 					<Font name="FontFace">
-						<Family><url>rbxasset://fonts/families/SourceSansPro.json</url></Family>
-						<Weight>400</Weight>
-						<Style>Normal</Style>
-						<CachedFaceId><url>rbxasset://fonts/SourceSansPro-Regular.ttf</url></CachedFaceId>
+						<Family><url>rbxasset://fonts/families/Roboto.json</url></Family>
+						<Weight>500</Weight>
+						<Style>Italic</Style>
 					</Font>
+					<bool name="Interactable">true</bool>
 					<int name="LayoutOrder">0</int>
 					<float name="LineHeight">1</float>
+					<string name="LocalizationMatchIdentifier"></string>
+					<string name="LocalizationMatchedSourceText"></string>
 					<int name="MaxVisibleGraphemes">-1</int>
 					<string name="Name">msg</string>
 					<Ref name="NextSelectionDown">null</Ref>
 					<Ref name="NextSelectionLeft">null</Ref>
 					<Ref name="NextSelectionRight">null</Ref>
 					<Ref name="NextSelectionUp">null</Ref>
+					<string name="OpenTypeFeatures"></string>
 					<UDim2 name="Position">
 						<XS>0</XS>
 						<XO>5</XO>
@@ -193,6 +204,7 @@
 						<G>1</G>
 						<B>1</B>
 					</Color3>
+					<token name="TextDirection">0</token>
 					<bool name="TextScaled">false</bool>
 					<float name="TextSize">18</float>
 					<Color3 name="TextStrokeColor3">
@@ -211,19 +223,23 @@
 				</Properties>
 			</Item>
 		</Item>
-		<Item class="Folder" referent="RBXC079424ED638453BB870AE430F8575A5">
+		<Item class="Folder" referent="RBX6D634A1CDA5145A28427F7CC6A79AABE">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
+				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+				<bool name="DefinesCapabilities">false</bool>
 				<string name="Name">Config</string>
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="ModuleScript" referent="RBXFA5B001A4FD048888AD4DD1CDE6DE822">
+			<Item class="ModuleScript" referent="RBX69F73B99EB5D4142BA5EC0486F05BD55">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
 					<Content name="LinkedSource"><null></null></Content>
 					<string name="Name">Code</string>
-					<string name="ScriptGuid">{067D324A-7F37-4CCB-8CA2-634D5A0ED48D}</string>
+					<string name="ScriptGuid">{1CEE97BE-A5A0-4F9D-B088-40FF8413AA18}</string>
 					<ProtectedString name="Source"><![CDATA[client = nil
 Pcall = nil
 Routine = nil
@@ -342,18 +358,22 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="BoolValue" referent="RBXC5C715F7D5494505BC95AA730AC37B5C">
+			<Item class="BoolValue" referent="RBX31D730BD0BD14FAB8010B375505073D5">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
 					<string name="Name">AllowMultiple</string>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
 					<bool name="Value">true</bool>
 				</Properties>
 			</Item>
-			<Item class="BoolValue" referent="RBX9BECA5A00F6C4D0E92519E35FC90E647">
+			<Item class="BoolValue" referent="RBXAF59A1201C344F96BA05D2D50EBB9E52">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
 					<string name="Name">CanKeepAlive</string>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>

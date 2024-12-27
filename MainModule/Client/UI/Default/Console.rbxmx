@@ -2,18 +2,20 @@
 	<Meta name="ExplicitAutoJoints">true</Meta>
 	<External>null</External>
 	<External>nil</External>
-	<Item class="ScreenGui" referent="RBX2301E89A182C4A29A8A317CA325109D3">
+	<Item class="ScreenGui" referent="RBXD21518DA47174680A1C8B6ED7C65C9A3">
 		<Properties>
 			<BinaryString name="AttributesSerialize"></BinaryString>
 			<bool name="AutoLocalize">false</bool>
+			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 			<bool name="ClipToDeviceSafeArea">true</bool>
+			<bool name="DefinesCapabilities">false</bool>
 			<int name="DisplayOrder">9000000</int>
 			<bool name="Enabled">false</bool>
-			<bool name="IgnoreGuiInset">false</bool>
 			<string name="Name">Console</string>
 			<bool name="ResetOnSpawn">false</bool>
 			<Ref name="RootLocalizationTable">null</Ref>
 			<token name="SafeAreaCompatibility">1</token>
+			<token name="ScreenInsets">2</token>
 			<token name="SelectionBehaviorDown">0</token>
 			<token name="SelectionBehaviorLeft">0</token>
 			<token name="SelectionBehaviorRight">0</token>
@@ -23,7 +25,7 @@
 			<BinaryString name="Tags"></BinaryString>
 			<token name="ZIndexBehavior">0</token>
 		</Properties>
-		<Item class="Frame" referent="RBXBB2AB6D097064807B0A084DE21D1B5B5">
+		<Item class="Frame" referent="RBXE81E0F8090A14F7D83B8C964CC5B9177">
 			<Properties>
 				<bool name="Active">false</bool>
 				<Vector2 name="AnchorPoint">
@@ -34,20 +36,23 @@
 				<bool name="AutoLocalize">false</bool>
 				<token name="AutomaticSize">0</token>
 				<Color3 name="BackgroundColor3">
-					<R>0.0862745121</R>
-					<G>0.0862745121</G>
-					<B>0.0862745121</B>
+					<R>0.215686277</R>
+					<G>0.215686277</G>
+					<B>0.215686277</B>
 				</Color3>
-				<float name="BackgroundTransparency">0.100000001</float>
+				<float name="BackgroundTransparency">0</float>
 				<Color3 name="BorderColor3">
-					<R>0</R>
-					<G>0</G>
-					<B>0</B>
+					<R>0.850980401</R>
+					<G>0.65882355</G>
+					<B>0.407843143</B>
 				</Color3>
 				<token name="BorderMode">0</token>
-				<int name="BorderSizePixel">0</int>
+				<int name="BorderSizePixel">3</int>
+				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 				<bool name="ClipsDescendants">false</bool>
+				<bool name="DefinesCapabilities">false</bool>
 				<bool name="Draggable">false</bool>
+				<bool name="Interactable">true</bool>
 				<int name="LayoutOrder">0</int>
 				<string name="Name">Frame</string>
 				<Ref name="NextSelectionDown">null</Ref>
@@ -83,7 +88,7 @@
 				<bool name="Visible">true</bool>
 				<int name="ZIndex">1</int>
 			</Properties>
-			<Item class="ScrollingFrame" referent="RBXCAD58FE9AE85435CB7D331FCDAC7055C">
+			<Item class="ScrollingFrame" referent="RBX770D98B5638E4D938DCAAD6B3398965B">
 				<Properties>
 					<bool name="Active">false</bool>
 					<Vector2 name="AnchorPoint">
@@ -118,10 +123,13 @@
 						<YS>0</YS>
 						<YO>1000</YO>
 					</UDim2>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 					<bool name="ClipsDescendants">true</bool>
+					<bool name="DefinesCapabilities">false</bool>
 					<bool name="Draggable">false</bool>
 					<token name="ElasticBehavior">0</token>
 					<token name="HorizontalScrollBarInset">0</token>
+					<bool name="Interactable">true</bool>
 					<int name="LayoutOrder">0</int>
 					<Content name="MidImage"><url>http://roblox.com/asset?id=158348114</url></Content>
 					<string name="Name">PlayerList</string>
@@ -170,7 +178,7 @@
 					<int name="ZIndex">2</int>
 				</Properties>
 			</Item>
-			<Item class="TextBox" referent="RBX91EB47877E5C474EA1DD2182AC28EB76">
+			<Item class="TextBox" referent="RBXEEADD35364BA43CBBB0AC6E08CEB11E1">
 				<Properties>
 					<bool name="Active">true</bool>
 					<Vector2 name="AnchorPoint">
@@ -193,18 +201,21 @@
 					</Color3>
 					<token name="BorderMode">0</token>
 					<int name="BorderSizePixel">5</int>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 					<bool name="ClearTextOnFocus">false</bool>
 					<bool name="ClipsDescendants">false</bool>
+					<bool name="DefinesCapabilities">false</bool>
 					<bool name="Draggable">false</bool>
-					<token name="Font">16</token>
 					<Font name="FontFace">
-						<Family><url>rbxasset://fonts/families/SourceSansPro.json</url></Family>
-						<Weight>600</Weight>
-						<Style>Normal</Style>
-						<CachedFaceId><url>rbxasset://fonts/SourceSansPro-Semibold.ttf</url></CachedFaceId>
+						<Family><url>rbxasset://fonts/families/Roboto.json</url></Family>
+						<Weight>500</Weight>
+						<Style>Italic</Style>
 					</Font>
+					<bool name="Interactable">true</bool>
 					<int name="LayoutOrder">0</int>
 					<float name="LineHeight">1</float>
+					<string name="LocalizationMatchIdentifier"></string>
+					<string name="LocalizationMatchedSourceText"></string>
 					<int name="MaxVisibleGraphemes">-1</int>
 					<bool name="MultiLine">false</bool>
 					<string name="Name">TextBox</string>
@@ -212,6 +223,7 @@
 					<Ref name="NextSelectionLeft">null</Ref>
 					<Ref name="NextSelectionRight">null</Ref>
 					<Ref name="NextSelectionUp">null</Ref>
+					<string name="OpenTypeFeatures"></string>
 					<Color3 name="PlaceholderColor3">
 						<R>0.699999988</R>
 						<G>0.699999988</G>
@@ -251,6 +263,7 @@
 						<G>1</G>
 						<B>1</B>
 					</Color3>
+					<token name="TextDirection">0</token>
 					<bool name="TextEditable">true</bool>
 					<bool name="TextScaled">false</bool>
 					<float name="TextSize">22</float>
@@ -269,7 +282,7 @@
 					<int name="ZIndex">1</int>
 				</Properties>
 			</Item>
-			<Item class="Frame" referent="RBXF724A454860F40D29871A4F7DDC974CE">
+			<Item class="Frame" referent="RBXD85BF72B591546CAAB64FDF1A70BA96B">
 				<Properties>
 					<bool name="Active">false</bool>
 					<Vector2 name="AnchorPoint">
@@ -284,7 +297,7 @@
 						<G>0.0862745121</G>
 						<B>0.0862745121</B>
 					</Color3>
-					<float name="BackgroundTransparency">0.100000001</float>
+					<float name="BackgroundTransparency">1</float>
 					<Color3 name="BorderColor3">
 						<R>0</R>
 						<G>0</G>
@@ -292,8 +305,11 @@
 					</Color3>
 					<token name="BorderMode">0</token>
 					<int name="BorderSizePixel">0</int>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 					<bool name="ClipsDescendants">true</bool>
+					<bool name="DefinesCapabilities">false</bool>
 					<bool name="Draggable">false</bool>
+					<bool name="Interactable">true</bool>
 					<int name="LayoutOrder">0</int>
 					<string name="Name">TopBar</string>
 					<Ref name="NextSelectionDown">null</Ref>
@@ -330,7 +346,7 @@
 					<int name="ZIndex">5</int>
 				</Properties>
 			</Item>
-			<Item class="ScrollingFrame" referent="RBXF43C44E636F54A918C03DBC086B0EC8C">
+			<Item class="ScrollingFrame" referent="RBX00898A14399B4EC3B378845163FFE5D1">
 				<Properties>
 					<bool name="Active">false</bool>
 					<Vector2 name="AnchorPoint">
@@ -365,10 +381,13 @@
 						<YS>0</YS>
 						<YO>1000</YO>
 					</UDim2>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 					<bool name="ClipsDescendants">true</bool>
+					<bool name="DefinesCapabilities">false</bool>
 					<bool name="Draggable">false</bool>
 					<token name="ElasticBehavior">0</token>
 					<token name="HorizontalScrollBarInset">0</token>
+					<bool name="Interactable">true</bool>
 					<int name="LayoutOrder">0</int>
 					<Content name="MidImage"><url>http://roblox.com/asset?id=158348114</url></Content>
 					<string name="Name">ScrollingFrame</string>
@@ -418,7 +437,7 @@
 				</Properties>
 			</Item>
 		</Item>
-		<Item class="TextButton" referent="RBX6A85C01399694BF29C0685D67D3AB627">
+		<Item class="TextButton" referent="RBX73AE427861CC4030977457D27ABC2BDC">
 			<Properties>
 				<bool name="Active">true</bool>
 				<Vector2 name="AnchorPoint">
@@ -442,17 +461,20 @@
 				</Color3>
 				<token name="BorderMode">0</token>
 				<int name="BorderSizePixel">0</int>
+				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 				<bool name="ClipsDescendants">false</bool>
+				<bool name="DefinesCapabilities">false</bool>
 				<bool name="Draggable">false</bool>
-				<token name="Font">3</token>
 				<Font name="FontFace">
-					<Family><url>rbxasset://fonts/families/SourceSansPro.json</url></Family>
+					<Family><url>rbxasset://fonts/families/Roboto.json</url></Family>
 					<Weight>400</Weight>
 					<Style>Normal</Style>
-					<CachedFaceId><url>rbxasset://fonts/SourceSansPro-Regular.ttf</url></CachedFaceId>
 				</Font>
+				<bool name="Interactable">true</bool>
 				<int name="LayoutOrder">0</int>
 				<float name="LineHeight">1</float>
+				<string name="LocalizationMatchIdentifier"></string>
+				<string name="LocalizationMatchedSourceText"></string>
 				<int name="MaxVisibleGraphemes">-1</int>
 				<bool name="Modal">false</bool>
 				<string name="Name">Entry</string>
@@ -460,6 +482,7 @@
 				<Ref name="NextSelectionLeft">null</Ref>
 				<Ref name="NextSelectionRight">null</Ref>
 				<Ref name="NextSelectionUp">null</Ref>
+				<string name="OpenTypeFeatures"></string>
 				<UDim2 name="Position">
 					<XS>0</XS>
 					<XO>0</XO>
@@ -494,6 +517,7 @@
 					<G>1</G>
 					<B>1</B>
 				</Color3>
+				<token name="TextDirection">0</token>
 				<bool name="TextScaled">false</bool>
 				<float name="TextSize">18</float>
 				<Color3 name="TextStrokeColor3">
@@ -511,28 +535,34 @@
 				<int name="ZIndex">3</int>
 			</Properties>
 		</Item>
-		<Item class="Folder" referent="RBXE60030A72D0B485CA7934EF2167DB7D0">
+		<Item class="Folder" referent="RBX2D45D66EA76044FD8594A48D06B841E5">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
+				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+				<bool name="DefinesCapabilities">false</bool>
 				<string name="Name">Config</string>
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="BoolValue" referent="RBX7B9405DC665A41F4AAD651D137B01229">
+			<Item class="BoolValue" referent="RBX48F0417BBF0E4E18B263062D77F8CC5F">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
 					<string name="Name">CanKeepAlive</string>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
 					<bool name="Value">false</bool>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX650BA9DFA61640CDB4ECFC7A77A9419C">
+			<Item class="ModuleScript" referent="RBX10BCF67FBDD846518AB6C8E108395B70">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
 					<Content name="LinkedSource"><null></null></Content>
 					<string name="Name">Code</string>
-					<string name="ScriptGuid">{B657D7B2-F9BE-4DCF-9B3B-B447F129FD08}</string>
+					<string name="ScriptGuid">{E8833943-2D6B-4CCF-9A44-E7CD26D54593}</string>
 					<ProtectedString name="Source"><![CDATA[client = nil
 Pcall = nil
 Routine = nil
@@ -831,15 +861,43 @@ end
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="BoolValue" referent="RBX9160A5A45AF74D6EB2DD7F939D7CD004">
+			<Item class="BoolValue" referent="RBX3AD7D2E526594B489183D32342E1B0AF">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
 					<string name="Name">AllowMultiple</string>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
 					<bool name="Value">false</bool>
 				</Properties>
 			</Item>
+		</Item>
+		<Item class="UIPadding" referent="RBX287085DAC17D41E9AE50BC7F39F4A4BF">
+			<Properties>
+				<BinaryString name="AttributesSerialize"></BinaryString>
+				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+				<bool name="DefinesCapabilities">false</bool>
+				<string name="Name">UIPadding</string>
+				<UDim name="PaddingBottom">
+					<S>0</S>
+					<O>0</O>
+				</UDim>
+				<UDim name="PaddingLeft">
+					<S>0</S>
+					<O>0</O>
+				</UDim>
+				<UDim name="PaddingRight">
+					<S>0</S>
+					<O>0</O>
+				</UDim>
+				<UDim name="PaddingTop">
+					<S>0</S>
+					<O>10</O>
+				</UDim>
+				<int64 name="SourceAssetId">-1</int64>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
 		</Item>
 	</Item>
 </roblox>

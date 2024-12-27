@@ -1183,110 +1183,6 @@ return function(Vargs, env)
 			end
 		};
 
-		Lag = {
-			Prefix = Settings.Prefix;
-			Commands = {"lag", "fpslag"};
-			Args = {"player"};
-			Description = "Makes the target player(s)'s FPS drop";
-			AdminLevel = "Admins";
-			Function = function(plr: Player, args: {string}, data: {any})
-				for _, v in service.GetPlayers(plr, args[1]) do
-					if Admin.CheckAuthority(plr, v, "lag") then
-						Remote.Send(v, "Function", "SetFPS", 5.6)
-					end
-				end
-			end
-		};
-
-		UnLag = {
-			Prefix = Settings.Prefix;
-			Commands = {"unlag", "unfpslag"};
-			Args = {"player"};
-			Description = "Un-Lag";
-			AdminLevel = "Admins";
-			Function = function(plr: Player, args: {string})
-				for _, v in service.GetPlayers(plr, args[1]) do
-					Remote.Send(v, "Function", "RestoreFPS")
-				end
-			end
-		};
-
-		Crash = {
-			Prefix = Settings.Prefix;
-			Commands = {"crash"};
-			Args = {"player"};
-			Description = "Crashes the target player(s)";
-			AdminLevel = "Admins";
-			Function = function(plr: Player, args: {string}, data: {any})
-				for _, v in service.GetPlayers(plr, args[1], {
-					IsKicking = true;
-					NoFakePlayer = false;
-					})
-				do
-					if Admin.CheckAuthority(plr, v, "crash") then
-						Remote.Send(v, "Function", "Crash")
-					end
-				end
-			end
-		};
-
-		HardCrash = {
-			Prefix = Settings.Prefix;
-			Commands = {"hardcrash"};
-			Args = {"player"};
-			Description = "Hard-crashes the target player(s)";
-			AdminLevel = "Admins";
-			Function = function(plr: Player, args: {string}, data: {any})
-				for _, v in service.GetPlayers(plr, args[1], {
-					IsKicking = true;
-					NoFakePlayer = false;
-					})
-				do
-					if Admin.CheckAuthority(plr, v, "hard-crash") then
-						Remote.Send(v, "Function", "HardCrash")
-					end
-				end
-			end
-		};
-
-		RAMCrash = {
-			Prefix = Settings.Prefix;
-			Commands = {"ramcrash", "memcrash"};
-			Args = {"player"};
-			Description = "RAM-crashes the target player(s)";
-			AdminLevel = "Admins";
-			Function = function(plr: Player, args: {string}, data: {any})
-				for _, v in service.GetPlayers(plr, args[1], {
-					IsKicking = true;
-					NoFakePlayer = false;
-					})
-				do
-					if Admin.CheckAuthority(plr, v, "RAM-crash") then
-						Remote.Send(v, "Function", "RAMCrash")
-					end
-				end
-			end
-		};
-
-		GPUCrash = {
-			Prefix = Settings.Prefix;
-			Commands = {"gpucrash"};
-			Args = {"player"};
-			Description = "GPU crashes the target player(s)";
-			AdminLevel = "Admins";
-			Function = function(plr: Player, args: {string}, data: {any})
-				for _, v in service.GetPlayers(plr, args[1], {
-					IsKicking = true;
-					NoFakePlayer = false;
-					})
-				do
-					if Admin.CheckAuthority(plr, v, "GPU-crash") then
-						Remote.Send(v, "Function", "GPUCrash")
-					end
-				end
-			end
-		};
-
 		CustomKick = {
 			Prefix = Settings.Prefix;
 			Commands = {"ckick", "customkick", "customcrash"};
@@ -1450,7 +1346,7 @@ return function(Vargs, env)
 
 		Nil = {
 			Prefix = Settings.Prefix;
-			Commands = {"nil"};
+			Commands = {"nullify"};
 			Args = {"player"};
 			Hidden = true;
 			Description = `Deletes the player forcefully, causing them to be kicked for "Player has been removed from the DataModel"`;
@@ -1492,97 +1388,6 @@ return function(Vargs, env)
 						Duration = tonumber(args[2]) or 5;
 					})
 				end
-			end
-		};
-
-		Disguise = {
-			Prefix = Settings.Prefix;
-			Commands = {"disguise", "masquerade"};
-			Args = {"player", "username"};
-			Description = "Names the player, chars the player, and modifies the player's chat tag";
-			AdminLevel = "Admins";
-			Function = function(plr: Player, args: {string})
-				assert(args[2], "Argument missing or nil")
-				local userId = Functions.GetUserIdFromNameAsync(args[2])
-				assert(userId, "Invalid username supplied/user not found")
-
-				local username = select(2, xpcall(function()
-					return service.Players:GetNameFromUserIdAsync(userId)
-				end, function() return args[2] end))
-
-				if service.Players:GetPlayerByUserId(userId) then
-					error("You cannot disguise as this player (currently in server)")
-				end
-
-				Commands.Char.Function(plr, args)
-				Commands.DisplayName.Function(plr, {args[1], username})
-
-				local ChatService = Functions.GetChatService()
-
-				for _, v in service.GetPlayers(plr, args[1]) do
-					if Variables.DisguiseBindings[v.UserId] then
-						Variables.DisguiseBindings[v.UserId].Rename:Disconnect()
-						Variables.DisguiseBindings[v.UserId].Rename = nil
-						if ChatService then
-							ChatService:RemoveSpeaker(Variables.DisguiseBindings[v.UserId].TargetUsername)
-							ChatService:UnregisterProcessCommandsFunction(`Disguise_{v.Name}`)
-						end
-					end
-
-					Variables.DisguiseBindings[v.UserId] = {
-						TargetUsername = username;
-						Rename = v.CharacterAppearanceLoaded:Connect(function(char)
-							Commands.DisplayName.Function(v, {v.Name, username})
-						end);
-					}
-
-					if ChatService then
-						local disguiseSpeaker = ChatService:AddSpeaker(username)
-						disguiseSpeaker:JoinChannel("All")
-						ChatService:RegisterProcessCommandsFunction(`Disguise_{v.Name}`, function(speaker, message, channelName)
-							if speaker == v.Name then
-								local filteredMessage = select(2, xpcall(function()
-									return service.TextService:FilterStringAsync(message, v.UserId, Enum.TextFilterContext.PrivateChat):GetChatForUserAsync(v.UserId)
-								end, function()
-									Remote.Send(v, "Function", "ChatMessage", "A message filtering error occurred.", Color3.new(1, 64/255, 77/255))
-									return
-								end))
-								if filteredMessage and not server.Admin.DoHideChatCmd(v, message) then
-									disguiseSpeaker:SayMessage(filteredMessage, channelName)
-									if v.Character then
-										service.Chat:Chat(v.Character, filteredMessage, Enum.ChatColor.White)
-									end
-								end
-								return true
-							end
-							return false
-						end)
-					end
-				end
-			end
-		};
-
-		UnDisguise = {
-			Prefix = Settings.Prefix;
-			Commands = {"undisguise", "removedisguise", "cleardisguise", "nodisguise"};
-			Args = {"player"};
-			Description = "Removes the player's disguise";
-			AdminLevel = "Admins";
-			Function = function(plr: Player, args: {string})
-				local ChatService = Functions.GetChatService()
-				for _, v in service.GetPlayers(plr, args[1]) do
-					if Variables.DisguiseBindings[v.UserId] then
-						Variables.DisguiseBindings[v.UserId].Rename:Disconnect()
-						Variables.DisguiseBindings[v.UserId].Rename = nil
-						pcall(function()
-							ChatService:RemoveSpeaker(Variables.DisguiseBindings[v.UserId].TargetUsername)
-							ChatService:UnregisterProcessCommandsFunction(`Disguise_{v.Name}`)
-						end)
-					end
-					Variables.DisguiseBindings[v.UserId] = nil
-				end
-				Commands.UnChar.Function(plr, args)
-				Commands.UnDisplayName.Function(plr, args)
 			end
 		};
 	}

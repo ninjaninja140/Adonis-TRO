@@ -2,7 +2,7 @@
 	<Meta name="ExplicitAutoJoints">true</Meta>
 	<External>null</External>
 	<External>nil</External>
-	<Item class="ScreenGui" referent="RBX954B616CA4474AD8BC89E13D2DA9D78C">
+	<Item class="ScreenGui" referent="RBXC3E33C6032744311A26C2649463E5D9D">
 		<Properties>
 			<BinaryString name="AttributesSerialize"></BinaryString>
 			<bool name="AutoLocalize">false</bool>
@@ -25,7 +25,7 @@
 			<BinaryString name="Tags"></BinaryString>
 			<token name="ZIndexBehavior">0</token>
 		</Properties>
-		<Item class="ImageButton" referent="RBXBDEB520E79DF4256AABC1DC653C7BC70">
+		<Item class="ImageButton" referent="RBX52BD92A712B5421AAA5021362782CBB5">
 			<Properties>
 				<bool name="Active">true</bool>
 				<Vector2 name="AnchorPoint">
@@ -87,7 +87,7 @@
 				<token name="ResampleMode">0</token>
 				<Ref name="RootLocalizationTable">null</Ref>
 				<float name="Rotation">0</float>
-				<token name="ScaleType">0</token>
+				<token name="ScaleType">3</token>
 				<bool name="Selectable">true</bool>
 				<bool name="Selected">false</bool>
 				<token name="SelectionBehaviorDown">0</token>
@@ -128,7 +128,7 @@
 				<int name="ZIndex">1</int>
 			</Properties>
 		</Item>
-		<Item class="Folder" referent="RBX2DF80D66F79845D8A73969648AF1B25B">
+		<Item class="Folder" referent="RBX7AD4FA91C07740928940495E1139BC14">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
@@ -137,14 +137,14 @@
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="ModuleScript" referent="RBX0768A7D76F8A4EA98E6A21DC2C2D301A">
+			<Item class="ModuleScript" referent="RBX16C010DCC11C4E098021904D3A5C1A26">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 					<bool name="DefinesCapabilities">false</bool>
 					<Content name="LinkedSource"><null></null></Content>
 					<string name="Name">NoEnv-Code</string>
-					<string name="ScriptGuid">{793ADC20-EF20-4C4F-88EA-EE05E53BB8C6}</string>
+					<string name="ScriptGuid">{9D8071C1-F29E-4F6B-8C9E-27359586A458}</string>
 					<ProtectedString name="Source"><![CDATA[client = nil
 Pcall = nil
 Routine = nil
@@ -180,7 +180,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="BoolValue" referent="RBXCAF03274A4834C1E95556FF215DC0A1D">
+			<Item class="BoolValue" referent="RBXA7AB6792102D4D6A86A74CDBCBD75734">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>

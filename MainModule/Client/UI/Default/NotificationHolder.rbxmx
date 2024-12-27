@@ -2,13 +2,15 @@
 	<Meta name="ExplicitAutoJoints">true</Meta>
 	<External>null</External>
 	<External>nil</External>
-	<Item class="ScreenGui" referent="RBX1B8D7F2048E846C0A345F3D775272CF8">
+	<Item class="ScreenGui" referent="RBX78A139DF525548A1B1DDF1E60167ACA4">
 		<Properties>
 			<BinaryString name="AttributesSerialize"></BinaryString>
 			<bool name="AutoLocalize">false</bool>
+			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 			<bool name="ClipToDeviceSafeArea">true</bool>
+			<bool name="DefinesCapabilities">false</bool>
 			<int name="DisplayOrder">0</int>
-			<bool name="Enabled">true</bool>
+			<bool name="Enabled">false</bool>
 			<string name="Name">NotificationHolder</string>
 			<bool name="ResetOnSpawn">true</bool>
 			<Ref name="RootLocalizationTable">null</Ref>
@@ -23,19 +25,23 @@
 			<BinaryString name="Tags"></BinaryString>
 			<token name="ZIndexBehavior">1</token>
 		</Properties>
-		<Item class="Folder" referent="RBXED6CC453FC29433AB34D0ABD1D61E8D9">
+		<Item class="Folder" referent="RBX8ECB2E896DA84197AD0067D544B1D912">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
+				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+				<bool name="DefinesCapabilities">false</bool>
 				<string name="Name">Config</string>
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="ModuleScript" referent="RBXB8C8CA4AC7C94542B5ADB1627705A18A">
+			<Item class="ModuleScript" referent="RBX95C8EA0EF9434EF69FAC3E28A9E3EA03">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
 					<Content name="LinkedSource"><null></null></Content>
 					<string name="Name">Code</string>
-					<string name="ScriptGuid">{F0D5FB93-FA57-4B66-A909-AB8E927063C7}</string>
+					<string name="ScriptGuid">{F359E799-6CA3-476E-8ECA-098E5DE62FA7}</string>
 					<ProtectedString name="Source"><![CDATA[client = nil
 Pcall = nil
 Routine = nil
@@ -97,18 +103,22 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="BoolValue" referent="RBX40B2C0BB56A947959C91F70DF5D86054">
+			<Item class="BoolValue" referent="RBXCCAD0B883F674AAD9DF570A627F915B2">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
 					<string name="Name">AllowMultiple</string>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
 					<bool name="Value">false</bool>
 				</Properties>
 			</Item>
-			<Item class="BoolValue" referent="RBXBF61279984024F7D8F93EB70AB956107">
+			<Item class="BoolValue" referent="RBX1063C46406C44A2995E71ED3C78DF92F">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
 					<string name="Name">CanKeepAlive</string>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
@@ -116,7 +126,7 @@ end]]></ProtectedString>
 				</Properties>
 			</Item>
 		</Item>
-		<Item class="ScrollingFrame" referent="RBX13CD2A134604459C90541595F232C0BC">
+		<Item class="ScrollingFrame" referent="RBX64F763483AF341ECBBB31B7A23FB4FE8">
 			<Properties>
 				<bool name="Active">true</bool>
 				<Vector2 name="AnchorPoint">
@@ -151,10 +161,13 @@ end]]></ProtectedString>
 					<YS>0</YS>
 					<YO>0</YO>
 				</UDim2>
-				<bool name="ClipsDescendants">true</bool>
+				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+				<bool name="ClipsDescendants">false</bool>
+				<bool name="DefinesCapabilities">false</bool>
 				<bool name="Draggable">false</bool>
 				<token name="ElasticBehavior">0</token>
 				<token name="HorizontalScrollBarInset">0</token>
+				<bool name="Interactable">true</bool>
 				<int name="LayoutOrder">0</int>
 				<Content name="MidImage"><url>rbxasset://textures/ui/Scroll/scroll-middle.png</url></Content>
 				<string name="Name">ScrollingFrame</string>
@@ -202,20 +215,26 @@ end]]></ProtectedString>
 				<bool name="Visible">true</bool>
 				<int name="ZIndex">1</int>
 			</Properties>
-			<Item class="UIListLayout" referent="RBX6C86649C26334524BDE8FED20B7C0972">
+			<Item class="UIListLayout" referent="RBX73521A2FFA36492DA77E7CE4E947F99A">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
 					<token name="FillDirection">1</token>
 					<token name="HorizontalAlignment">1</token>
+					<token name="HorizontalFlex">0</token>
+					<token name="ItemLineAlignment">0</token>
 					<string name="Name">UIListLayout</string>
 					<UDim name="Padding">
 						<S>0</S>
-						<O>5</O>
+						<O>10</O>
 					</UDim>
 					<token name="SortOrder">2</token>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
 					<token name="VerticalAlignment">2</token>
+					<token name="VerticalFlex">0</token>
+					<bool name="Wraps">false</bool>
 				</Properties>
 			</Item>
 		</Item>
